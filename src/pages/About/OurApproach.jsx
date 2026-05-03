@@ -1,112 +1,150 @@
+"use client";
+
 import React from "react";
-import { FaRegDotCircle } from "react-icons/fa"; // Icon for Vision
-import { IoDiamondOutline } from "react-icons/io5"; // Icon for Value
-import { LuFocus } from "react-icons/lu"; // Icon for Mission
+import { FaRegDotCircle } from "react-icons/fa";
+import { IoDiamondOutline } from "react-icons/io5";
+import { LuFocus } from "react-icons/lu";
 
-// आप इन इमेज URLs को अपनी इमेज से बदल सकते हैं
-const missionImg = "https://demo.awaikenthemes.com/artistics/wp-content/uploads/2024/11/our-mission-img.jpg";
-const visionImg = "https://demo.awaikenthemes.com/artistics/wp-content/uploads/2024/11/our-vision-img.jpg";
-const valueImg = "https://demo.awaikenthemes.com/artistics/wp-content/uploads/2024/11/our-value-img.jpg";
+// Images
+const missionImg =
+  "https://demo.awaikenthemes.com/artistics/wp-content/uploads/2024/11/our-mission-img.jpg";
+const visionImg =
+  "https://demo.awaikenthemes.com/artistics/wp-content/uploads/2024/11/our-vision-img.jpg";
+const valueImg =
+  "https://demo.awaikenthemes.com/artistics/wp-content/uploads/2024/11/our-value-img.jpg";
 
-// Glow Component for background effect
-const Glow = ({ position, size, customStyles }) => (
+// Glow
+const Glow = ({ size, customStyles }) => (
   <div
-    className="absolute -z-10 animate-pulse"
+    className="absolute -z-10"
     style={{
-      width: `${size}px`,
-      height: `${size}px`,
-      background: "rgba(191, 247, 71, 0.1)", // Light green glow
-      filter: "blur(100px)",
+      width: size,
+      height: size,
+      background: "rgba(191, 247, 71, 0.08)",
+      filter: "blur(120px)",
       borderRadius: "50%",
       ...customStyles,
     }}
   />
 );
 
-
 export default function OurApproach() {
-  // Data for the cards, matching the image
   const cardData = [
     {
       icon: <LuFocus />,
       title: "Our Mission",
       image: missionImg,
-      desc: "Delivering transformative digital solutions that elevate brands connections."
+      desc: "Our mission is to deliver high-performance web, mobile, and digital solutions that help businesses grow faster, scale efficiently, and stay ahead in the competitive digital world.",
     },
     {
       icon: <FaRegDotCircle />,
       title: "Our Vision",
       image: visionImg,
-      desc: "Shaping the future through innovative and impactful digital experiences."
+      desc: "We aim to become a leading IT solutions provider by creating innovative, user-focused digital experiences that transform ideas into powerful digital products.",
     },
     {
       icon: <IoDiamondOutline />,
-      title: "Our Value",
+      title: "Our Values",
       image: valueImg,
-      desc: "Integrity, creativity, innovation, collaboration, excellence, results."
-    }
+      desc: "We believe in innovation, transparency, quality, and long-term partnerships. Our focus is on delivering real results with honesty and excellence in every project.",
+    },
   ];
 
   return (
     <section className="relative w-full bg-black text-white py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
-     
- 
-      {/* Top Section: Title and Description */}
-      <div className="relative z-10 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center mb-20">
 
-       <div className="absolute inset-0 z-0">
-              <Glow position="right" size={600} customStyles={{ top: "290px", opacity: 0.4 }} />
-            </div>
-        <div className="flex flex-col">
-          <p className="flex items-center gap-2 text-base font-bold tracking-wider uppercase mb-4">
-            <span className="text-[#BFF747] text-2xl">*</span> OUR APPROACH
-          </p>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-normal leading-tight">
-           Crafting <span className="text-[#BFF747] font-bold">impactful</span> digital experiences
-          </h1>
-        </div>
-        <div className="flex flex-col items-start">
-          <p className="text-gray-300 leading-relaxed text-lg">
-            We blend creativity, strategy, and technology to design digital experiences that connect, engage, and inspire. From concept to completion, we deliver tailored solutions that elevate brands and drive results.
-          </p>
-        </div>
+      {/* Glow */}
+      <div className="absolute inset-0">
+        <Glow size={600} customStyles={{ top: "250px", right: "10%" }} />
       </div>
 
-      {/* Bottom Section: Cards */}
+      {/* Header */}
+      <div className="relative z-10 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center mb-20">
+
+        <div>
+          <p className="flex items-center gap-2 text-sm sm:text-base font-bold tracking-widest uppercase mb-4">
+            <span className="text-[#BFF747] text-2xl">*</span> OUR APPROACH
+          </p>
+
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl leading-tight">
+            Building{" "}
+            <span className="text-[#BFF747] font-bold">
+              scalable & impactful
+            </span>{" "}
+            digital solutions
+          </h1>
+        </div>
+
+        <div>
+          <p className="text-gray-400 leading-relaxed text-lg max-w-lg">
+            We combine strategy, design, and technology to craft digital
+            experiences that not only look great but also deliver measurable
+            business results. From startups to enterprises, we help brands grow
+            in the digital era.
+          </p>
+        </div>
+
+      </div>
+
+      {/* Cards */}
       <div className="relative z-10 max-w-6xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          
+
           {cardData.map((card, index) => (
-            <div 
-              key={index} 
-              className="relative bg-[#121212] p-6 rounded-3xl border border-white/10 group cursor-pointer"
+            <div
+              key={index}
+              className="relative bg-[#111] p-6 rounded-3xl border border-white/10 
+                         group hover:-translate-y-2 transition duration-300"
             >
-              {/* Image container with shine effect */}
+
+              {/* Image */}
               <div className="relative rounded-2xl overflow-hidden mb-6">
-                <img 
-                  src={card.image} 
-                  alt={card.title} 
-                  className="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-105" 
+                <img
+                  src={card.image}
+                  alt={card.title}
+                  className="w-full h-full object-cover group-hover:scale-105 transition duration-500"
                 />
-                {/* Shine effect element */}
-                <div className="absolute top-0 left-0 w-full h-full bg-black/20"></div>
-                 <div className="absolute top-0 -left-full w-1/2 h-full bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-80 transition-all duration-700 ease-in-out group-hover:left-full transform -skew-x-12"></div>
-                {/* Icon on top of the image */}
+
+                {/* Overlay */}
+                <div className="absolute inset-0 bg-black/30"></div>
+
+                {/* Shine */}
+                <div className="absolute -left-full top-0 w-1/2 h-full 
+                                bg-gradient-to-r from-transparent via-white/20 to-transparent
+                                group-hover:left-full transition duration-700 -skew-x-12"></div>
+
+                {/* Icon */}
                 <span className="absolute bottom-4 left-4 text-3xl text-[#BFF747]">
                   {card.icon}
                 </span>
               </div>
-              
-              {/* Card Text Content */}
+
+              {/* Content */}
               <div>
-                <h2 className="text-2xl font-semibold mb-3">{card.title}</h2>
-                <p className="text-gray-400 leading-relaxed">{card.desc}</p>
+                <h2 className="text-2xl font-semibold mb-3">
+                  {card.title}
+                </h2>
+                <p className="text-gray-400 leading-relaxed">
+                  {card.desc}
+                </p>
               </div>
+
             </div>
           ))}
 
         </div>
       </div>
+
+      {/* Bottom CTA */}
+      <div className="relative z-10 text-center mt-20">
+        <h2 className="text-2xl sm:text-3xl font-bold">
+          Let’s turn your ideas into powerful digital products 
+        </h2>
+        <p className="text-gray-400 mt-3">
+          Partner with us to build scalable, modern, and result-driven solutions.
+        </p>
+      </div>
+
     </section>
   );
 }

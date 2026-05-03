@@ -16,23 +16,27 @@ const AGENCY_IMAGE_URL = 'https://demo.awaikenthemes.com/artistics/wp-content/th
 const features = [
   {
     icon: <VscSymbolMisc />,
-    title: 'Your Success, Our Mission',
-    description: 'We measure our success by the success of our clients. With a focus on results and a dedication to quality, our mission is to deliver digital solutions that make a real impact.',
+    title: "Client-Centric Approach",
+    description:
+      "We prioritize your business goals and tailor every solution to deliver measurable results. Our focus is on building long-term partnerships through trust, transparency, and performance.",
   },
   {
     icon: <IoCubeOutline />,
-    title: 'Creators Of Digital Excellence',
-    description: 'At the core of our agency is a commitment to excellence and creativity. We specialize in crafting digital solutions that not only meet your needs but also elevate your brand.',
+    title: "Custom Web & App Development",
+    description:
+      "We build high-performance websites and scalable mobile applications using modern technologies to ensure speed, security, and seamless user experience.",
   },
   {
     icon: <RiStackFill />,
-    title: 'Creators Of Digital Excellence',
-    description: 'At the core of our agency is a commitment to excellence and creativity. We specialize in crafting digital solutions that not only meet your needs but also elevate your brand.',
+    title: "Creative UI/UX Design",
+    description:
+      "Our design team crafts intuitive and engaging user interfaces that not only look stunning but also enhance usability and drive conversions.",
   },
   {
     icon: <HiOutlineCircleStack />,
-    title: 'Creators Of Digital Excellence',
-    description: 'At the core of our agency is a commitment to excellence and creativity. We specialize in crafting digital solutions that not only meet your needs but also elevate your brand.',
+    title: "Digital Growth & Marketing",
+    description:
+      "From SEO to paid advertising, we help businesses grow online by increasing visibility, generating leads, and maximizing ROI with data-driven strategies.",
   },
 ];
 
@@ -52,11 +56,11 @@ export default function AboutAgency() {
        
         <div className="lg:sticky top-20 flex flex-col">
           <p className="flex items-center gap-2 text-xl font-bold tracking-widest uppercase text-white mb-6">
-            <span className="text-[#BFF747] text-2xl">*</span> ABOUT AGENCY
+            <span className="text-[#BFF747] text-2xl">*</span> ABOUT OUR COMPANY
           </p>
-          <h2 className="text-5xl lg:text-6xl font-light leading-tight">
-            Crafting <span className="text-[#BFF747] font-bold">unique digital</span> experiences that elevate your brand
-          </h2>
+      <h2 className="text-5xl lg:text-6xl font-light leading-tight">
+  Crafting <span className="text-[#BFF747] font-bold">unique digital</span> experiences that elevate your brand
+</h2> 
           
           <div className="mt-12 flex items-center">
             <button className="bg-gray-800/50 text-white py-4 px-8 rounded-full hover:bg-gray-700/50 transition-colors duration-300">

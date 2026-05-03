@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Link from "next/link";
 
 export default function ContactHero() {
   useEffect(() => {
@@ -36,7 +37,7 @@ export default function ContactHero() {
         
         {/* ✅ Breadcrumb: "Home * Contact us" */}
         <div className="flex items-center gap-3 mt-4 text-gray-300">
-          <a href="/" className="hover:text-white transition-colors">Home</a>
+          <Link href="/" className="hover:text-white transition-colors">Home</Link>
           <span className="text-[#BFF747] text-xl">*</span>
           <span className="text-white">Contact us</span>
         </div>

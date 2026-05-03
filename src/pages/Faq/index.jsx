@@ -5,7 +5,8 @@ import Banner from '../Home/Banner';
 import Footer from '../../Components/Footer';
 import LetsCollaborate from '../../Components/LetsCollaborate';
 import FaqSection from './FaqSection';
-export default function Faq() {
+import WhatsAppButton from '@/Components/WhatsAppButton';
+export default function Index() {
   return (
   
     <main className='bg-black'>
@@ -22,15 +23,9 @@ export default function Faq() {
 
         <Banner />
         <FaqSection />
-       
-      
-        <LetsCollaborate />
         <Footer />
-      
-        
-
       </div> 
-      {/* रैपर div यहाँ खत्म होता है */}
+                   <WhatsAppButton/>
 
     </main>
   );

@@ -1,34 +1,49 @@
-import React from "react";
+"use client";
 
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, FreeMode } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/free-mode";
 
 export default function Banner() {
-  return (
-    <div className="bg-lime-300 py-3 overflow-hidden relative">
-      <div className="flex whitespace-nowrap">
-        {/* First loop */}
-        <div className="animate-marquee flex md:text-2xl font-bold font">
-          <span className="mx-6">✶ Reporting</span>
-          <span className="mx-6">✶ Custom Branding</span>
-          <span className="mx-6">✶ Website Design</span>
-          <span className="mx-6">✶ Digital Marketing</span>
-          <span className="mx-6">✶ Reporting</span>
-          <span className="mx-6">✶ Custom Branding</span>
-          <span className="mx-6">✶ Website Design</span>
-          <span className="mx-6">✶ Digital Marketing</span>
-        </div>
+  const items = [
+    "Web Development",
+    "Mobile Apps",
+    "UI/UX Design",
+    "Digital Marketing",
+    "SEO Optimization",
+    "Cloud Solutions",
+    "E-Commerce",
+    "Brand Strategy",
+  ];
 
-        {/* Duplicate loop for smooth infinite scroll */}
-        <div className="animate-marquee flex" aria-hidden="true">
-          <span className="mx-6">✶ Reporting</span>
-          <span className="mx-6">✶ Custom Branding</span>
-          <span className="mx-6">✶ Website Design</span>
-          <span className="mx-6">✶ Digital Marketing</span>
-          <span className="mx-6">✶ Reporting</span>
-          <span className="mx-6">✶ Custom Branding</span>
-          <span className="mx-6">✶ Website Design</span>
-          <span className="mx-6">✶ Digital Marketing</span>
-        </div>
-      </div>
+  return (
+    <div className="bg-[#BFF747] py-4">
+
+      <Swiper
+        modules={[Autoplay, FreeMode]}
+        slidesPerView="auto"
+        spaceBetween={30}
+        loop={true}
+        freeMode={true}
+        speed={4000} // 👈 smooth scrolling speed
+        autoplay={{
+          delay: 0, // 👈 continuous scroll
+          disableOnInteraction: false,
+        }}
+        className="w-full"
+      >
+        {[...items, ...items].map((item, index) => (
+          <SwiperSlide key={index} className="!w-auto">
+            <span className="text-black text-lg md:text-2xl font-semibold whitespace-nowrap">
+              ✶ {item}
+            </span>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+
     </div>
   );
 }

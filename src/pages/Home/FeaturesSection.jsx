@@ -1,106 +1,205 @@
-import React from 'react';
-import { FiArrowUpRight } from 'react-icons/fi';
-import { FaArrowLeft } from 'react-icons/fa';
+"use client";
+
+import React from "react";
+import { FiArrowUpRight } from "react-icons/fi";
+import { FaArrowLeft } from "react-icons/fa";
 import Glow from "../../Components/Glow";
+import Link from "next/link";
+
+// ✅ Swiper
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+
+import "swiper/css";
 
 const featuresData = [
   {
-    imageUrl: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1920&auto-format&fit=crop',
-    title: 'Custom Branding Solutions',
-    description: 'Unique brand identity development, including logos, color palettes.',
+    imageUrl: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+    title: "Custom Web Development",
+    description:
+      "High-performance, scalable websites built with modern technologies like React, Next.js & Node.",
   },
   {
-    imageUrl: 'https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1920&auto-format&fit=crop',
-    title: 'Data-Driven Digital Marketing',
-    description: 'Strategies combining SEO, PPC, content marketing.',
+    imageUrl: "https://images.unsplash.com/photo-1551650975-87deedd944c3",
+    title: "Mobile App Development",
+    description:
+      "Android & iOS apps with smooth UI, fast performance, and real business impact.",
+  },
+  {
+    imageUrl: "https://images.unsplash.com/photo-1460925895917-afdab827c52f",
+    title: "SEO & Digital Marketing",
+    description:
+      "Grow your traffic, leads, and sales with data-driven SEO and marketing strategies.",
+  },
+  {
+    imageUrl: "https://images.unsplash.com/photo-1518779578993-ec3579fee39f",
+    title: "Cloud & DevOps Solutions",
+    description:
+      "Deploy faster, scale smarter with cloud infrastructure and automation pipelines.",
   },
 ];
 
 const companyLogos = [
-  { name: 'Fiverr', imageUrl: 'https://demo.awaikenthemes.com/artistics/wp-content/uploads/2024/11/agency-supports-logo-6-1.svg' },
-  { name: 'Behance', imageUrl: 'https://demo.awaikenthemes.com/artistics/wp-content/uploads/2024/11/agency-supports-logo-2-1.svg' },
-  { name: 'Trello', imageUrl: 'https://demo.awaikenthemes.com/artistics/wp-content/uploads/2024/11/agency-supports-logo-3-1.svg' },
-  { name: 'Slack', imageUrl: 'https://demo.awaikenthemes.com/artistics/wp-content/uploads/2024/11/agency-supports-logo-4-1.svg' },
-  { name: 'Asana', imageUrl: 'https://demo.awaikenthemes.com/artistics/wp-content/uploads/2024/11/agency-supports-logo-5-1.svg' },
-  { name: 'Upwork', imageUrl: 'https://demo.awaikenthemes.com/artistics/wp-content/uploads/2024/11/agency-supports-logo-1-1.svg' },
+  { name: "Google", imageUrl: "https://cdn.worldvectorlogo.com/logos/google-1.svg" },
+  { name: "Meta", imageUrl: "https://cdn.worldvectorlogo.com/logos/facebook-5.svg" },
+  { name: "Microsoft", imageUrl: "https://cdn.worldvectorlogo.com/logos/microsoft-5.svg" },
+  { name: "Shopify", imageUrl: "https://cdn.worldvectorlogo.com/logos/shopify.svg" },
+  { name: "Upwork", imageUrl: "https://cdn.worldvectorlogo.com/logos/upwork.svg" },
 ];
 
+// ✅ Card
 const FeatureCard = ({ imageUrl, title, description }) => (
-  <div className="bg-[#1C1C1C] rounded-3xl p-6 sm:p-8 flex flex-col group" data-aos="fade-up">
+  <div className="bg-[#1C1C1C] rounded-3xl p-6 flex flex-col group h-full">
     <div className="relative rounded-2xl overflow-hidden">
-      <img src={imageUrl} alt={title} className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out" />
-      <div className="absolute inset-0 bg-gradient-to-br from-transparent via-white/30 to-transparent transform -translate-x-full -skew-x-12 group-hover:translate-x-full transition-transform duration-700 ease-in-out"></div>
+      <img
+        src={imageUrl}
+        alt={title}
+        className="w-full h-52 object-cover group-hover:scale-110 transition duration-500"
+      />
+      <div className="absolute inset-0 bg-gradient-to-br from-transparent via-white/20 to-transparent transform -translate-x-full group-hover:translate-x-full transition duration-700"></div>
     </div>
-    <div className="mt-6">
-      <h3 className="text-xl font-bold text-white mb-2">{title}</h3>
-      <p className="text-gray-400">{description}</p>
+
+    <div className="mt-5 flex-1">
+      <h3 className="text-lg font-bold text-white mb-2">{title}</h3>
+      <p className="text-gray-400 text-sm">{description}</p>
+    </div>
+
+    <div className="mt-4 flex items-center text-[#BFF747]">
+      <FiArrowUpRight />
     </div>
   </div>
 );
 
 export default function FeaturesSection() {
   return (
-    <section className="relative w-full bg-black text-white py-24 px-6 sm:px-8 overflow-hidden font">
+    <section className="relative w-full bg-black text-white py-24 px-6 overflow-hidden">
+
       <div className="max-w-7xl mx-auto">
+
+        {/* Glow */}
         <div className="absolute inset-0 z-0">
-          <Glow position="right" size={600} customStyles={{ top: "290px", opacity: 0.4 }} />
-        </div>
-        
-        <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mb-16 lg:mb-24">
-          <div data-aos="fade-right">
-            <p className="flex items-center gap-2 text-xl font-bold tracking-[0.2em] uppercase mb-4"><span className="text-[#BFF747] text-2xl">*</span> WHY CHOOSE</p>
-            <h1 className="text-4xl md:text-5xl lg:text-5xl font-bold leading-tight">Innovative <span className="text-[#BFF747]">features</span> for your digital success<span className="text-gray-600">.</span></h1>
-          </div>
-          <div className="flex flex-col items-start lg:items-start gap-6" data-aos="fade-left">
-            <p className="text-gray-400 leading-relaxed max-w-md text-left lg:text-left">Our digital services empower brands with innovative strategies and solutions for sustainable growth and engagement.</p>
-            <a href="#" className="flex items-center gap-4 group"><span className="bg-[#2A2A2A] text-white font-semibold py-3 px-6 rounded-full group-hover:bg-[#333333] transition-colors">Learn More</span><div className="w-12 h-12 bg-[#BFF747] rounded-full flex items-center justify-center group-hover:scale-110 transition-transform"><FiArrowUpRight className="h-6 w-6 text-black group-hover:rotate-45 transition-transform" /></div></a>
-          </div>
+          <Glow position="right" size={600} customStyles={{ top: "300px", opacity: 0.3 }} />
         </div>
 
-        <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-8">
-          {featuresData.map((feature, index) => <FeatureCard key={index} {...feature} />)}
-        </div>
-        
-        <div className="relative z-10 mt-16 lg:mt-24 max-w-7xl mx-auto bg-[#1A1A1A] rounded-3xl p-8 sm:p-12" data-aos="fade-up">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-            <div className="flex flex-col items-start text-left">
-              <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3">Content Creation And Strategy</h2>
-              <p className="text-gray-400 leading-relaxed max-w-lg">High-quality, engaging content across blogs, videos, and graphics designed to captivate and retain audiences.</p>
-            </div>
-            <div className="flex justify-start lg:justify-end">
-              <a href="#" className="relative w-36 h-36 flex items-center justify-center text-center group">
-                <svg className="absolute w-full h-full animate-spin-slow" viewBox="0 0 100 100"><path id="circlePath" fill="none" d="M 50, 50 m -40, 0 a 40,40 0 1,1 80,0 a 40,40 0 1,1 -80,0" /><text><textPath href="#circlePath" startOffset="50%" textAnchor="middle" className="fill-[#BFF747] text-xs font-semibold tracking-widest uppercase">Get free consultation · Get free consultation ·</textPath></text></svg>
-                <FaArrowLeft className="text-white text-2xl group-hover:scale-110 transition-transform" />
-              </a>
-            </div>
-          </div>
+        {/* Header */}
+        <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-10 mb-16">
           
-          <div className="my-10 border-t border-gray-800"></div>
+          <div>
+            <p className="flex items-center gap-2 text-lg font-bold uppercase mb-4">
+              <span className="text-[#BFF747]">*</span> WHY CHOOSE US
+            </p>
 
-          {/* ✅✅✅ YEH NAYA "INFINITE MARQUEE" LOGO SLIDER HAI ✅✅✅ */}
-          <div className="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_48px,_black_calc(100%-48px),transparent_100%)]">
-            {/* Pehli List */}
-            <ul className="flex items-center justify-center animate-marquee">
-              {companyLogos.map((logo, index) => (
-                <li key={index} className="mx-4 flex-shrink-0">
-                  <div className="w-40 h-24 bg-[#2A2A2A] rounded-2xl flex items-center justify-center p-4">
-                    <img src={logo.imageUrl} alt={logo.name} className="max-h-8 w-auto" />
-                  </div>
-                </li>
-              ))}
-            </ul>
-            {/* Doosri List (Seamless Loop ke liye) */}
-            <ul className="flex items-center justify-center animate-marquee" aria-hidden="true">
-              {companyLogos.map((logo, index) => (
-                <li key={index + companyLogos.length} className="mx-4 flex-shrink-0">
-                  <div className="w-40 h-24 bg-[#2A2A2A] rounded-2xl flex items-center justify-center p-4">
-                    <img src={logo.imageUrl} alt={logo.name} className="max-h-8 w-auto" />
-                  </div>
-                </li>
-              ))}
-            </ul>
+            <h1 className="text-4xl md:text-5xl font-bold leading-tight">
+              Smart <span className="text-[#BFF747]">IT Solutions</span> for
+              modern businesses
+            </h1>
+          </div>
+
+          <div>
+            <p className="text-gray-400">
+              We deliver end-to-end IT services including web development,
+              mobile apps, SEO, cloud, and automation to help your business grow faster.
+            </p>
+
+            <Link href="/contact" className="flex items-center gap-4 mt-6 group">
+              <span className="bg-[#2A2A2A] px-6 py-3 rounded-full">
+                Start Project
+              </span>
+
+              <div className="w-12 h-12 bg-[#BFF747] rounded-full flex items-center justify-center group-hover:scale-110 transition">
+                <FiArrowUpRight className="text-black group-hover:rotate-45 transition" />
+              </div>
+            </Link>
           </div>
         </div>
+
+        {/* 🔥 Swiper Slider */}
+        <div className="relative z-10">
+          <Swiper
+            modules={[Autoplay]}
+            spaceBetween={20}
+            autoplay={{ delay: 2500 }}
+            loop={true}
+            breakpoints={{
+              0: { slidesPerView: 1 },
+              640: { slidesPerView: 2 },
+              1024: { slidesPerView: 3 },
+            }}
+          >
+            {featuresData.map((feature, index) => (
+              <SwiperSlide key={index}>
+                <FeatureCard {...feature} />
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
+
+        {/* CTA */}
+        <div className="relative z-10 mt-20 bg-[#1A1A1A] rounded-3xl p-10">
+
+          <div className="grid lg:grid-cols-2 gap-8 items-center">
+
+            <div>
+              <h2 className="text-3xl font-bold mb-3">
+                Complete IT & Digital Ecosystem
+              </h2>
+              <p className="text-gray-400">
+                From idea to launch — we design, develop, and scale your business digitally.
+              </p>
+            </div>
+
+            <div className="flex justify-start lg:justify-end">
+              <Link href="/contact" className="relative w-32 h-32 flex items-center justify-center group">
+
+                <svg className="absolute w-full h-full animate-spin-slow" viewBox="0 0 100 100">
+                  <path
+                    id="circlePath"
+                    fill="none"
+                    d="M 50,50 m -40,0 a 40,40 0 1,1 80,0 a 40,40 0 1,1 -80,0"
+                  />
+                  <text>
+                    <textPath
+                      href="#circlePath"
+                      startOffset="50%"
+                      textAnchor="middle"
+                      className="fill-[#BFF747] text-xs uppercase"
+                    >
+                      Free Consultation • Free Consultation •
+                    </textPath>
+                  </text>
+                </svg>
+
+                <FaArrowLeft className="text-white text-xl group-hover:scale-110 transition" />
+              </Link>
+            </div>
+
+          </div>
+
+          {/* Logos */}
+          <div className="mt-10 flex overflow-hidden">
+            <div className="flex animate-marquee">
+              {companyLogos.map((logo, i) => (
+                <div key={i} className="mx-4">
+                  <div className="w-36 h-20 bg-[#2A2A2A] rounded-xl flex items-center justify-center p-3">
+                    <img src={logo.imageUrl} alt={logo.name} className="max-h-6" />
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className="flex animate-marquee">
+              {companyLogos.map((logo, i) => (
+                <div key={i + 10} className="mx-4">
+                  <div className="w-36 h-20 bg-[#2A2A2A] rounded-xl flex items-center justify-center p-3">
+                    <img src={logo.imageUrl} alt={logo.name} className="max-h-6" />
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+        </div>
+
       </div>
     </section>
   );

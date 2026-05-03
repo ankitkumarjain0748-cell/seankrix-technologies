@@ -1,128 +1,147 @@
-import React from 'react';
-import { BsTelephone } from 'react-icons/bs';
-import { HiOutlineEnvelope } from 'react-icons/hi2';
-import { FaPinterestP, FaXTwitter, FaFacebookF, FaInstagram } from 'react-icons/fa6';
-import Glow from './Glow';
+"use client";
 
-// Logo ko ek alag component banana aachi practice hai
+import React from "react";
+import Link from "next/link";
+import Image from "next/image";
+import { BsTelephone } from "react-icons/bs";
+import { HiOutlineEnvelope } from "react-icons/hi2";
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaMapMarkerAlt } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import Glow from "./Glow";
+
+// ✅ Logo Component (Image + Text combo)
 const ArtisticLogo = () => (
   <div className="flex items-center gap-2">
-    <svg width="49" height="56" viewBox="0 0 49 56" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-10 w-auto">
-        <path d="M24.5 0L48.5211 14V23.3333L24.5 9.33333L0.478882 23.3333V14L24.5 0Z" fill="#BFF747"/>
-        <path d="M24.5 14L48.5211 28V37.3333L24.5 23.3333L0.478882 37.3333V28L24.5 14Z" fill="#BFF747"/>
-        <path d="M24.5 28L48.5211 42V51.3333L24.5 37.3333L0.478882 51.3333V42L24.5 28Z" fill="#BFF747"/>
-    </svg>
-    <span className="text-3xl font-bold text-white">artistic.</span>
+    <Image
+      src="/logo.png" // 👈 apna logo path
+      alt="logo"
+      width={40}
+      height={40}
+    />
+    <span className="text-2xl font-bold text-white">
+      <span className="text-[#BFF747]">IT</span>Services
+    </span>
   </div>
 );
 
-// Links aur Social Icons ka data, taaki code saaf rahe
+// ✅ Data
 const quickLinks = [
-  { name: 'Home', href: '#' },
-  { name: 'About Us', href: '#' },
-  { name: 'Services', href: '#' },
-  { name: 'Blog', href: '#' },
+  { name: "Home", href: "/" },
+  { name: "About Us", href: "/about" },
+  { name: "Services", href: "/services" },
+  { name: "Contact", href: "/contact" },
 ];
 
-const supportLinks = [
-  { name: 'Contact us', href: '#' },
-  { name: 'Terms & Conditions', href: '#' },
-  { name: 'Career', href: '#' },
-  { name: 'Help', href: '#' },
+const servicesLinks = [
+  { name: "Web Development", href: "/services/web-development" },
+  { name: "App Development", href: "/services/app-development" },
+  { name: "UI/UX Design", href: "/services/ui-ux" },
+  { name: "Digital Marketing", href: "/services/marketing" },
 ];
 
 const socialIcons = [
-  { icon: <FaPinterestP />, href: '#' },
-  { icon: <FaXTwitter />, href: '#' },
-  { icon: <FaFacebookF />, href: '#' },
-  { icon: <FaInstagram />, href: '#' },
+  { icon: <FaFacebookF />, href: "/" },
+  { icon: <FaInstagram />, href: "/" },
+  { icon: <FaLinkedinIn />, href: "/" },
+  { icon: <FaXTwitter />, href: "/" },
 ];
 
 export default function Footer() {
   return (
-    <footer className=" relative bg-black text-white font">
-     <div className="absolute inset-0 z-0">
-            <Glow position="left" size={600} customStyles={{ top: "10px" }} />
-           
-          </div>
-        <hr className="border-t border-white/20 w-full" />
-      <div className="max-w-7xl mx-auto px-6 py-16 sm:px-8 lg:py-24">
-     
-        {/* --- Top Section with all columns --- */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 mb-16">
-          
-          {/* Column 1: Brand Info */}
-          <div className="space-y-8">
-            <ArtisticLogo />
-            <div className="space-y-4 text-xl">
-              <a href="tel:(309) 8855–314" className="flex items-center gap-3 group">
-                <BsTelephone className="text-[#BFF747] text-xl" />
-                <span className="group-hover:text-white transition-colors">(309) 8855–314</span>
-              </a>
-              <a href="mailto:info@domainname.com" className="flex items-center gap-3 group">
-                <HiOutlineEnvelope className="text-[#BFF747] text-lg" />
-                <span className="group-hover:text-white transition-colors">info@domainname.com</span>
-              </a>
+    <footer className="relative bg-black text-white">
+      
+      {/* Glow */}
+      <div className="absolute inset-0 z-0">
+        <Glow position="left" size={500} />
+      </div>
+
+      <div className="relative max-w-7xl mx-auto px-6 py-16">
+
+        {/* Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mb-12">
+
+          {/* Company Info */}
+          <div className="space-y-6">
+            <Link href="/">
+              <ArtisticLogo />
+            </Link>
+
+            <p className="text-gray-400 text-sm leading-relaxed">
+              We provide modern IT solutions including web development,
+              mobile apps, and digital marketing to grow your business.
+            </p>
+
+            {/* Contact */}
+            <div className="space-y-3 text-sm">
+              <div className="flex items-center gap-3">
+                <BsTelephone className="text-[#BFF747]" />
+                <span>+91 8824744976</span>
+              </div>
+
+              <div className="flex items-center gap-3">
+                <HiOutlineEnvelope className="text-[#BFF747]" />
+                <span>ankitkumarjain0748@gmail.com</span>
+              </div>
+
+              <div className="flex items-center gap-3">
+                <FaMapMarkerAlt className="text-[#BFF747]" />
+                <span>Jaipur, Rajasthan</span>
+              </div>
+            </div>
+
+            {/* Social */}
+            <div className="flex gap-3 pt-2">
+              {socialIcons.map((item, i) => (
+                <Link
+                  key={i}
+                  href={item.href ?? "/"}
+                  className="w-9 h-9 flex items-center justify-center border border-gray-700 rounded-full hover:bg-[#BFF747] hover:text-black transition"
+                >
+                  {item.icon}
+                </Link>
+              ))}
             </div>
           </div>
 
-          {/* Column 2: Quick Links */}
+          {/* Quick Links */}
           <div>
-            <h3 className="text-xl font-bold text-white mb-6">Quick Link</h3>
-            <ul className="space-y-4">
+            <h3 className="font-semibold text-lg mb-6">Quick Links</h3>
+            <ul className="space-y-3 text-gray-400 text-sm">
               {quickLinks.map((link) => (
                 <li key={link.name}>
-                  <a href={link.href} className="hover:text-white transition-colors">{link.name}</a>
+                  <Link
+                    href={link.href ?? "/"}
+                    className="hover:text-[#BFF747] transition"
+                  >
+                    {link.name}
+                  </Link>
                 </li>
               ))}
             </ul>
           </div>
 
-          {/* Column 3: Support */}
+          {/* Services */}
           <div>
-            <h3 className="text-xl font-bold text-white mb-6">Support</h3>
-            <ul className="space-y-4">
-              {supportLinks.map((link) => (
+            <h3 className="font-semibold text-lg mb-6">Our Services</h3>
+            <ul className="space-y-3 text-gray-400 text-sm">
+              {servicesLinks.map((link) => (
                 <li key={link.name}>
-                  <a href={link.href} className="hover:text-white transition-colors">{link.name}</a>
+                  <Link
+                    href={link.href ?? "/"}
+                    className="hover:text-[#BFF747] transition"
+                  >
+                    {link.name}
+                  </Link>
                 </li>
               ))}
             </ul>
           </div>
 
-          {/* Column 4: Newsletter */}
-          <div>
-            <h3 className="text-xl font-bold text-white mb-6">Subscribe Our Newsletter</h3>
-            <form className="flex flex-col sm:flex-row gap-2 mb-6">
-              <input 
-                type="email" 
-                placeholder="Enter your email" 
-                className="w-full bg-[#1C1C1C] border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-[#BFF747]/50"
-              />
-              <button 
-                type="submit" 
-                className="bg-[#BFF747] text-black font-bold px-6 py-3 rounded-lg hover:bg-opacity-90 transition-colors flex-shrink-0"
-              >
-                Subscribe
-              </button>
-            </form>
-            <div className="flex items-center gap-3">
-              {socialIcons.map((social, index) => (
-                <a 
-                  key={index} 
-                  href={social.href} 
-                  className="w-10 h-10 flex items-center justify-center border border-gray-700 rounded-full text-white hover:bg-[#BFF747] hover:text-black hover:border-[#BFF747] transition-all"
-                >
-                  {social.icon}
-                </a>
-              ))}
-            </div>
-          </div>
         </div>
-        
-        {/* --- Bottom Section with Copyright --- */}
-        <div className="border-t border-white/20 pt-8 text-center">
-          <p>Copyright © 2024 All Rights Reserved.</p>
+
+        {/* Bottom */}
+        <div className="border-t border-white/10 pt-6 text-center text-gray-500 text-sm">
+          © 2026 IT Services Company. All rights reserved.
         </div>
       </div>
     </footer>

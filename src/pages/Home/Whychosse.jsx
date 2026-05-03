@@ -9,16 +9,19 @@ const AGENCY_IMAGE_URL = 'https://demo.awaikenthemes.com/artistics/wp-content/th
 // Feature cards ka data, taaki code saaf rahe
 const featuresData = [
   {
-    title: "Data-Driven Approach",
-    description: "We leverage data and insights to make informed decisions that lead to more effective and efficient solutions."
+    title: "Experienced IT Professionals",
+    description:
+      "Our team consists of skilled developers, designers, and marketers with real-world experience in delivering high-quality digital solutions."
   },
   {
-    title: "Competitive Pricing",
-    description: "We offer our top-quality services at competitive prices, providing you with great value for your investment."
+    title: "Custom & Scalable Solutions",
+    description:
+      "We build tailored websites, apps, and systems that are scalable, secure, and designed to grow with your business."
   },
   {
-    title: "Ethical Business Practices",
-    description: "We maintain the highest level of professionalism and ethical standards professionalism in all our business dealings."
+    title: "End-to-End Services",
+    description:
+      "From idea to launch and marketing, we provide complete IT solutions including development, design, SEO, and ongoing support."
   }
 ];
 
@@ -59,17 +62,18 @@ export default function Whychosse() {
         <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mb-16 lg:mb-24">
           <div data-aos="fade-right">
             <p className="flex items-center gap-2 text-xl font-bold tracking-[0.2em] uppercase mb-4">
-              <span className="text-[#BFF747] text-2xl">*</span> WHY CHOOSE
+              <span className="text-[#BFF747] text-2xl">*</span>WHY CHOOSE US
             </p>
             <h1 className="text-4xl md:text-5xl lg:text-5xl font-bold leading-tight">
-              Expertise for <span className="text-[#BFF747]">your digital</span> growth journey
-              <span className="text-[#BFF747]">.</span>
+            Reliable <span className="text-[#BFF747]">IT solutions</span> for your business success
+<span className="text-[#BFF747]">.</span>
             </h1>
           </div>
           <div data-aos="fade-left">
             <p className="text-gray-400 leading-relaxed lg:pl-8">
-              Our dedicated team is committed to understanding your unique needs, ensuring that we provide innovative strategies that drive results. With a focus on quality and integrity.
-            </p>
+             We focus on delivering smart, result-driven IT solutions that help businesses grow faster. 
+Our approach combines modern technology, creative thinking, and proven strategies to ensure long-term success.
+</p>
           </div>
         </div>
 

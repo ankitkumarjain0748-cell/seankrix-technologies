@@ -11,17 +11,12 @@ import Footer from '../../Components/Footer';
 import LetsCollaborate from '../../Components/LetsCollaborate';
 import Whychosse from './Whychosse';
 import FeaturesSection from './FeaturesSection'
+import WhatsAppButton from '@/Components/WhatsAppButton';
 
 function Page() {
     return (
-
-
         <main className='bg-black'>
-
-
             <div className="">
-
-
                 <div className='relative z-20'>
                     <Navbar />
                     <Hero />
@@ -35,13 +30,14 @@ function Page() {
                 />
                 <Expertise />
                 <JoinAgency />
-                <Testimonials />
-                <LetsCollaborate />
+                {/* <Testimonials /> */}
+                {/* <LetsCollaborate /> */}
                 <Footer />
 
 
 
             </div>
+            <WhatsAppButton/>
 
         </main>
     );

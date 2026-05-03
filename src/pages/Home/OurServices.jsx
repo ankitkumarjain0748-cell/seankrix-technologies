@@ -7,27 +7,43 @@ import { FiArrowUpRight } from "react-icons/fi";
 import Glow from "../../Components/Glow";
 import { IoDiamondOutline } from "react-icons/io5";
 import { HiOutlinePresentationChartLine, HiOutlineLightBulb } from "react-icons/hi";
+import Link from "next/link";
 
 export default function OurServices() {
 
 
   const services = [
-    {
-      icon: <IoDiamondOutline />,
-      title: "Branding And Identity",
-      desc: "Developing a compelling brand identity through strategy, visuals, and to build strong customer connections."
-    },
-    {
-      icon: <HiOutlinePresentationChartLine />,
-      title: "Digital Marketing",
-      desc: "Improve your website visibility and rank higher on search engines through our tailored SEO and marketing strategies."
-    },
-    {
-      icon: <HiOutlineLightBulb />,
-      title: "Creative Content Production",
-      desc: "Create, schedule, and analyze engaging content to grow your brand's presence across all digital platforms."
-    }
-  ];
+  {
+    icon: <IoDiamondOutline />,
+    title: "Website Development",
+    desc: "We create fast, responsive, and SEO-friendly websites that deliver seamless user experience and help your business grow online."
+  },
+  {
+    icon: <HiOutlinePresentationChartLine />,
+    title: "Mobile App Development",
+    desc: "Build powerful Android and iOS apps with modern technology, smooth performance, and user-friendly design."
+  },
+  {
+    icon: <HiOutlineLightBulb />,
+    title: "UI/UX Design",
+    desc: "We design clean, modern, and user-focused interfaces that improve engagement and increase conversions."
+  },
+  {
+    icon: <IoDiamondOutline />,
+    title: "Digital Marketing",
+    desc: "Boost your business with SEO, social media marketing, and paid ads that generate traffic, leads, and sales."
+  },
+  {
+    icon: <HiOutlinePresentationChartLine />,
+    title: "Social Media Management",
+    desc: "Grow your brand on Instagram, Facebook, and other platforms with creative content and consistent strategy."
+  },
+  {
+    icon: <HiOutlineLightBulb />,
+    title: "E-Commerce Solutions",
+    desc: "We build scalable online stores with secure payment systems and optimized user journeys to increase sales."
+  }
+];
   const cardBgImageUrl = "https://demo.awaikenthemes.com/artistics/wp-content/uploads/2024/11/service-bg.svg";
 
   return (
@@ -41,25 +57,24 @@ export default function OurServices() {
         />
         <div className="flex flex-col">
           <p className="flex items-center gap-2 text-xl font-bold tracking-widest uppercase mb-4 font" >
-            <span className="text-[#BFF747] text-2xl">*</span> OUR SERVICES
+            <span className="text-[#BFF747] text-2xl">*</span> Explore Our Services
           </p>
           <h1 className="text-3xl sm:text-6xl lg:text-5xl font-light leading-tight font" >
-            Our <span className="text-[#BFF747] font-bold">digital services</span> to grow your brand
+          Powerful <span className="text-[#BFF747] font-bold">IT Solutions</span> for Your Business Growth
           </h1>
         </div>
         <div className="flex flex-col items-start" >
           <p className="text-gray-300 leading-relaxed mt-4">
-            Join our creative community to collaborate, innovate, and thrive together. We welcome passionate individuals eager to make.
-          </p>
-          <div className="mt-10 flex items-center font">
+We provide complete IT services including web development, mobile apps, digital marketing, and social media management to help your business grow faster and smarter in the digital world.          </p>
+          <Link href="/services" className="mt-10 flex items-center font">
             <button className="relative bg-gray-800 text-white font-semibold py-4 px-8 rounded-full overflow-hidden group">
               <span className="absolute inset-0 bg-gradient-to-r from-[#BFF747] to-green-400 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-in-out"></span>
-              <span className="relative">All Services</span>
+              <span className="relative">View Details</span>
             </button>
             <div className="w-14 h-14 bg-[#BFF747] rounded-full flex items-center justify-center ml-4 cursor-pointer group hover:scale-110 transition-transform duration-300">
               <FiArrowUpRight className="h-6 w-6 text-black group-hover:rotate-45 transition-transform duration-300" />
             </div>
-          </div>
+          </Link>
         </div>
       </div>
 
@@ -97,7 +112,9 @@ export default function OurServices() {
           ))}
 
         </div>
-        <span className=" md-flex block  justify-center text-center items-center p-5 font">Let’s make something great work together.<span className="text-[#BFF747]">Get Free Quote</span></span>
+        <span className=" md-flex block  justify-center text-center items-center p-5 font">
+         Let’s grow your business together. 
+<span className="text-[#BFF747] cursor-pointer">Get Free Consultation</span></span>
       </div>
     </section>
   );
