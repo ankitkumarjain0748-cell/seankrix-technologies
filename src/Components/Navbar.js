@@ -82,21 +82,21 @@ export default function Navbar() {
             <div className="flex items-center gap-3">
               <Link
                 href="/"
-                className="w-9 h-9 rounded-full border border-white/20 bg-white flex items-center justify-center hover:bg-[#00BFFF] transition duration-300"
+                className="w-9 h-9 rounded-full border border-white  flex items-center justify-center hover:bg-[#00BFFF] transition duration-300"
               >
                 <FaInstagram />
               </Link>
 
               <Link
                 href="/"
-                className="w-9 h-9 rounded-full border border-white/20 bg-white flex items-center justify-center hover:bg-[#00BFFF] transition duration-300"
+                className="w-9 h-9 rounded-full border border-white  flex items-center justify-center hover:bg-[#00BFFF] transition duration-300"
               >
                 <FaFacebookF />
               </Link>
 
               <Link
                 href="/"
-                className="w-9 h-9 rounded-full border border-white/20 bg-white flex items-center justify-center hover:bg-[#00BFFF] transition duration-300"
+                className="w-9 h-9 rounded-full border border-white  flex items-center justify-center hover:bg-[#00BFFF] transition duration-300"
               >
                 <FaLinkedinIn />
               </Link>

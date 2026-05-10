@@ -1,0 +1,348 @@
+[
+  {
+    "id": 1,
+    "slug": "web-development",
+    "title": "Web Development",
+    "shortDesc": "Custom websites built with modern technologies like React and Next.js for high performance and scalability.",
+    "description": "We create modern, fast, secure, and responsive websites tailored to your business goals. Our web development solutions focus on user experience, SEO optimization, performance, and scalability to help your business grow online.",
+    "icon": "FaCode",
+    "bannerImage": "/images/services/web-development.jpg",
+    "technologies": [
+      "React.js",
+      "Next.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Tailwind CSS"
+    ],
+    "features": [
+      "Responsive Website Design",
+      "SEO Friendly Structure",
+      "Fast Loading Speed",
+      "Admin Dashboard",
+      "Secure Backend",
+      "API Integration",
+      "Mobile Optimized",
+      "Custom Animations"
+    ],
+    "benefits": [
+      "Improve Online Presence",
+      "Increase Customer Engagement",
+      "Generate More Leads",
+      "Boost Brand Credibility"
+    ],
+    "process": [
+      {
+        "step": "01",
+        "title": "Requirement Analysis",
+        "desc": "Understanding your business goals and website requirements."
+      },
+      {
+        "step": "02",
+        "title": "UI/UX Planning",
+        "desc": "Creating modern layouts and user-friendly designs."
+      },
+      {
+        "step": "03",
+        "title": "Development",
+        "desc": "Building scalable frontend and backend systems."
+      },
+      {
+        "step": "04",
+        "title": "Testing & Launch",
+        "desc": "Performance testing and live deployment."
+      }
+    ],
+    "faq": [
+      {
+        "question": "How long does it take to build a website?",
+        "answer": "Usually between 7 to 30 days depending on project complexity."
+      },
+      {
+        "question": "Will my website be mobile responsive?",
+        "answer": "Yes, all websites are fully responsive for mobile, tablet, and desktop."
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "slug": "mobile-app-development",
+    "title": "Mobile App Development",
+    "shortDesc": "Android & iOS apps with smooth UI/UX and powerful backend systems.",
+    "description": "We develop high-performance mobile applications for Android and iOS platforms with intuitive user interfaces and scalable backend systems.",
+    "icon": "FaMobileAlt",
+    "bannerImage": "/images/services/mobile-app.jpg",
+    "technologies": [
+      "React Native",
+      "Flutter",
+      "Firebase",
+      "Node.js",
+      "MongoDB"
+    ],
+    "features": [
+      "Cross Platform Apps",
+      "Push Notifications",
+      "Secure Authentication",
+      "Realtime Database",
+      "Fast Performance",
+      "Modern UI/UX"
+    ],
+    "benefits": [
+      "Increase Customer Reach",
+      "Improve User Engagement",
+      "Boost Brand Loyalty"
+    ],
+    "process": [
+      {
+        "step": "01",
+        "title": "Planning",
+        "desc": "App strategy and feature planning."
+      },
+      {
+        "step": "02",
+        "title": "Design",
+        "desc": "Creating modern and intuitive UI/UX."
+      },
+      {
+        "step": "03",
+        "title": "Development",
+        "desc": "Frontend and backend app development."
+      },
+      {
+        "step": "04",
+        "title": "Deployment",
+        "desc": "Publishing apps on Play Store & App Store."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Do you develop both Android and iOS apps?",
+        "answer": "Yes, we build apps for both platforms."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "slug": "ui-ux-design",
+    "title": "UI/UX Design",
+    "shortDesc": "Creative and user-focused design to improve engagement and user experience.",
+    "description": "Our UI/UX design services focus on creating visually appealing and user-friendly interfaces that improve customer engagement and satisfaction.",
+    "icon": "FaPaintBrush",
+    "bannerImage": "/images/services/ui-ux.jpg",
+    "technologies": [
+      "Figma",
+      "Adobe XD",
+      "Photoshop",
+      "Illustrator"
+    ],
+    "features": [
+      "Modern UI Design",
+      "Wireframing",
+      "Interactive Prototypes",
+      "User Research",
+      "Mobile Friendly Design"
+    ],
+    "benefits": [
+      "Better User Experience",
+      "Increase User Retention",
+      "Higher Conversion Rate"
+    ],
+    "process": [
+      {
+        "step": "01",
+        "title": "Research",
+        "desc": "Understanding target audience and business goals."
+      },
+      {
+        "step": "02",
+        "title": "Wireframing",
+        "desc": "Creating layout structures and prototypes."
+      },
+      {
+        "step": "03",
+        "title": "Visual Design",
+        "desc": "Designing modern and engaging interfaces."
+      },
+      {
+        "step": "04",
+        "title": "Final Delivery",
+        "desc": "Providing complete UI design assets."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Which tools do you use for design?",
+        "answer": "We use Figma, Adobe XD, Photoshop, and Illustrator."
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "slug": "seo-optimization",
+    "title": "SEO Optimization",
+    "shortDesc": "Boost your Google ranking and increase organic traffic with proven SEO strategies.",
+    "description": "Our SEO services help businesses rank higher on Google, increase website visibility, and drive targeted organic traffic.",
+    "icon": "FaSearch",
+    "bannerImage": "/images/services/seo.jpg",
+    "technologies": [
+      "Google Analytics",
+      "Google Search Console",
+      "Ahrefs",
+      "SEMrush"
+    ],
+    "features": [
+      "On-Page SEO",
+      "Technical SEO",
+      "Keyword Research",
+      "Speed Optimization",
+      "SEO Audit",
+      "Content Optimization"
+    ],
+    "benefits": [
+      "Higher Search Rankings",
+      "Increase Organic Traffic",
+      "Generate More Leads"
+    ],
+    "process": [
+      {
+        "step": "01",
+        "title": "SEO Audit",
+        "desc": "Analyzing current website performance."
+      },
+      {
+        "step": "02",
+        "title": "Keyword Research",
+        "desc": "Finding high-ranking keywords."
+      },
+      {
+        "step": "03",
+        "title": "Optimization",
+        "desc": "Improving on-page and technical SEO."
+      },
+      {
+        "step": "04",
+        "title": "Monitoring",
+        "desc": "Tracking ranking and traffic growth."
+      }
+    ],
+    "faq": [
+      {
+        "question": "How long does SEO take?",
+        "answer": "SEO usually takes 3 to 6 months for noticeable results."
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "slug": "cloud-solutions",
+    "title": "Cloud Solutions",
+    "shortDesc": "Secure, scalable cloud infrastructure using AWS, Google Cloud & Azure.",
+    "description": "We provide secure and scalable cloud infrastructure solutions to improve business performance, flexibility, and data security.",
+    "icon": "FaCloud",
+    "bannerImage": "/images/services/cloud.jpg",
+    "technologies": [
+      "AWS",
+      "Google Cloud",
+      "Microsoft Azure",
+      "Docker",
+      "Kubernetes"
+    ],
+    "features": [
+      "Cloud Deployment",
+      "Server Management",
+      "Data Backup",
+      "Scalable Infrastructure",
+      "Security Monitoring"
+    ],
+    "benefits": [
+      "Reduced Infrastructure Cost",
+      "Better Security",
+      "Easy Scalability"
+    ],
+    "process": [
+      {
+        "step": "01",
+        "title": "Infrastructure Planning",
+        "desc": "Understanding business infrastructure needs."
+      },
+      {
+        "step": "02",
+        "title": "Cloud Setup",
+        "desc": "Deploying cloud servers and services."
+      },
+      {
+        "step": "03",
+        "title": "Security Configuration",
+        "desc": "Applying best cloud security practices."
+      },
+      {
+        "step": "04",
+        "title": "Monitoring",
+        "desc": "Continuous server monitoring and optimization."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Which cloud platforms do you support?",
+        "answer": "We support AWS, Google Cloud, and Microsoft Azure."
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "slug": "ecommerce-development",
+    "title": "E-Commerce Development",
+    "shortDesc": "Build powerful online stores with Shopify, WooCommerce & custom solutions.",
+    "description": "We develop secure, scalable, and user-friendly e-commerce websites that help businesses sell products online effectively.",
+    "icon": "FaShoppingCart",
+    "bannerImage": "/images/services/ecommerce.jpg",
+    "technologies": [
+      "Shopify",
+      "WooCommerce",
+      "Next.js",
+      "Stripe",
+      "Razorpay"
+    ],
+    "features": [
+      "Product Management",
+      "Payment Gateway Integration",
+      "Shopping Cart",
+      "Order Tracking",
+      "Admin Dashboard",
+      "Mobile Friendly"
+    ],
+    "benefits": [
+      "Increase Online Sales",
+      "Secure Payment System",
+      "Better Customer Experience"
+    ],
+    "process": [
+      {
+        "step": "01",
+        "title": "Store Planning",
+        "desc": "Understanding business and product requirements."
+      },
+      {
+        "step": "02",
+        "title": "Design & Development",
+        "desc": "Building attractive and responsive store layouts."
+      },
+      {
+        "step": "03",
+        "title": "Payment Integration",
+        "desc": "Adding secure payment gateways."
+      },
+      {
+        "step": "04",
+        "title": "Launch",
+        "desc": "Testing and launching the online store."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Can you integrate payment gateways?",
+        "answer": "Yes, we integrate Razorpay, Stripe, PayPal and more."
+      }
+    ]
+  }
+]
