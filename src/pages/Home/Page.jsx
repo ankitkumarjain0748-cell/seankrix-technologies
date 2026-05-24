@@ -1,42 +1,90 @@
-import React from 'react';
-import Hero from './Hero';
-import Navbar from '../../Components/Navbar';
-import Banner from './Banner';
-import AboutAgency from './AboutAgency';
-import OurServices from './OurServices';
-import JoinAgency from './JoinAgency';
-import Expertise from './Expertise';
-import Testimonials from './Testimonials';
-import Footer from '../../Components/Footer';
-import LetsCollaborate from '../../Components/LetsCollaborate';
-import Whychosse from './Whychosse';
-import FeaturesSection from './FeaturesSection'
-import WhatsAppButton from '@/Components/WhatsAppButton';
-import Layout from '@/Components/Layout';
+import React from "react";
+import Head from "next/head";
+
+import Hero from "./Hero";
+import Banner from "./Banner";
+import AboutAgency from "./AboutAgency";
+import OurServices from "./OurServices";
+import JoinAgency from "./JoinAgency";
+import Expertise from "./Expertise";
+import Whychosse from "./Whychosse";
+import FeaturesSection from "./FeaturesSection";
+
+import Layout from "@/Components/Layout";
 
 function Page() {
-    return (
+  return (
+    <>
+      <Head>
+        <title>
+          Web Development Services | SEANKRIX Technologies
+        </title>
 
-        <Layout>
+        <meta
+          name="description"
+          content="Professional website development services for businesses. Fast, responsive and SEO-friendly solutions."
+        />
 
-            <Hero />
+        <meta
+          name="keywords"
+          content="Website Development, SEO Services, Next.js Development, MERN Stack Developer"
+        />
 
-            <Banner />
-            <AboutAgency />
-            <OurServices />
-            <Whychosse />
-            <FeaturesSection
-            />
-            <Expertise />
-            <JoinAgency />
-            {/* <Testimonials /> */}
-            {/* <LetsCollaborate /> */}
-        </Layout>
+        <meta
+          property="og:title"
+          content="SEANKRIX Technologies"
+        />
 
+        <meta
+          property="og:description"
+          content="Professional website development services for businesses."
+        />
 
+        <meta
+          property="og:url"
+          content="https://seankrixtechnologies.com"
+        />
 
+        <meta
+          property="og:type"
+          content="website"
+        />
 
-    );
+        <meta
+          property="og:image"
+          content="https://seankrixtechnologies.com/og-image.jpg"
+        />
+
+        <meta
+          name="twitter:card"
+          content="summary_large_image"
+        />
+
+        <meta
+          name="robots"
+          content="index, follow"
+        />
+      </Head>
+
+      <Layout>
+        <Hero />
+
+        <Banner />
+
+        <AboutAgency />
+
+        <OurServices />
+
+        <Whychosse />
+
+        <FeaturesSection />
+
+        <Expertise />
+
+        <JoinAgency />
+      </Layout>
+    </>
+  );
 }
 
 export default Page;
