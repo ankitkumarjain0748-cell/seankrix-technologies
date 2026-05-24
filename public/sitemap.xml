@@ -9,7 +9,7 @@
 
   <!-- Main Pages -->
   <url>
-    <loc>https://seankrixtechnologies.com/about</loc>
+    <loc>https://seankrixtechnologies.com/about-us</loc>
     <priority>0.8</priority>
   </url>
 
@@ -31,14 +31,38 @@
 
 
 
+  <url>
+    <loc>https://seankrixtechnologies.com/faq</loc>
+    <priority>0.9</priority>
+  </url>
 
 
   <!-- Extra Pages -->
   <url>
-    <loc>https://seankrixtechnologies.com/faq</loc>
+    <loc>https://seankrixtechnologies.com/blogs</loc>
+    <priority>0.6</priority>
+  </url>
+<url>
+    <loc>https://seankrixtechnologies.com/careers</loc>
+    <priority>0.6</priority>
+  </url>
+<url>
+    <loc>https://seankrixtechnologies.com/case-studies</loc>
     <priority>0.6</priority>
   </url>
 
+  <url>
+    <loc>https://seankrixtechnologies.com/protfolio</loc>
+    <priority>0.6</priority>
+  </url>
 
+  <url>
+    <loc>https://seankrixtechnologies.com/term</loc>
+    <priority>0.6</priority>
+  </url>
 
+    <url>
+    <loc>https://seankrixtechnologies.com/privacy-policy</loc>
+    <priority>0.6</priority>
+  </url>
 </urlset>
