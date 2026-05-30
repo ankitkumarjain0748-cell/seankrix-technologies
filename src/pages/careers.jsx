@@ -57,95 +57,92 @@ export default function CareersPage() {
   return (
     <Layout>
 
-      <Head>
+     <Head>
+  <title>
+    Careers | IT Jobs, Internships & Career Opportunities | Seankrix Technologies
+  </title>
 
-        <title>
-          Careers | Join Seankrix Technologies
-        </title>
+<meta
+ name="description"
+ content="Explore exciting career opportunities at Seankrix Technologies. Apply for Web Development, Mobile App Development, UI/UX Design, SEO, Digital Marketing, React JS, Next.js, MERN Stack, and Software Development jobs and internships."
+/>
 
-        <meta
-          name="description"
-          content="Join Seankrix Technologies and build your career in web development, UI/UX design, SEO, digital marketing, and software development."
-        />
+<meta
+ name="keywords"
+ content="Careers, IT Jobs India, Software Developer Jobs, Web Developer Jobs, React JS Developer Jobs, Next JS Developer Jobs, MERN Stack Developer Jobs, Frontend Developer Jobs, Backend Developer Jobs, Full Stack Developer Jobs, Mobile App Developer Jobs, UI UX Designer Jobs, SEO Executive Jobs, Digital Marketing Jobs, Internship Opportunities, Remote IT Jobs, Technology Careers, Software Engineering Jobs, Career Opportunities, Seankrix Technologies Careers"
+/>
 
-        <meta
-          name="keywords"
-          content="Careers, IT Jobs, React Developer Jobs, SEO Jobs, UI UX Designer, Software Developer, Digital Marketing Jobs"
-        />
+<meta
+ name="author"
+ content="Seankrix Technologies"
+/>
 
-        <meta
-          name="author"
-          content="Seankrix Technologies"
-        />
+<meta
+ name="robots"
+ content="index, follow"
+/>
 
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1"
-        />
+  <link
+    rel="canonical"
+    href="https://www.seankrixtechnologies.com/careers"
+  />
 
-        <meta
-          name="robots"
-          content="index, follow"
-        />
+{/* Open Graph */} <meta
+ property="og:type"
+ content="website"
+/>
 
-        {/* Open Graph */}
-        <meta
-          property="og:type"
-          content="website"
-        />
+<meta
+ property="og:url"
+ content="https://www.seankrixtechnologies.com/careers"
+/>
 
-        <meta
-          property="og:url"
-          content="https://seankrixtechnologies.com/careers"
-        />
+<meta
+ property="og:title"
+ content="Careers | Join Seankrix Technologies"
+/>
 
-        <meta
-          property="og:title"
-          content="Careers | Seankrix Technologies"
-        />
+<meta
+ property="og:description"
+ content="Join our growing team and build your career in Web Development, Mobile Apps, UI/UX Design, SEO, Digital Marketing, and Software Development."
+/>
 
-        <meta
-          property="og:description"
-          content="Explore exciting career opportunities in development, design, SEO, and marketing."
-        />
+<meta
+ property="og:image"
+ content="https://www.seankrixtechnologies.com/og-image.jpg"
+/>
 
-        <meta
-          property="og:image"
-          content="https://seankrixtechnologies.com/og-image.jpg"
-        />
+<meta
+ property="og:site_name"
+ content="Seankrix Technologies"
+/>
 
-        {/* Twitter */}
-        <meta
-          name="twitter:card"
-          content="summary_large_image"
-        />
+{/* Twitter */} <meta
+ name="twitter:card"
+ content="summary_large_image"
+/>
 
-        <meta
-          name="twitter:title"
-          content="Careers | Seankrix Technologies"
-        />
+<meta
+ name="twitter:title"
+ content="Careers | Seankrix Technologies"
+/>
 
-        <meta
-          name="twitter:description"
-          content="Join our growing IT company and build your future with us."
-        />
+<meta
+ name="twitter:description"
+ content="Discover job openings, internships, and career opportunities at Seankrix Technologies."
+/>
 
-        <meta
-          name="twitter:image"
-          content="https://seankrixtechnologies.com/og-image.jpg"
-        />
+<meta
+ name="twitter:image"
+ content="https://www.seankrixtechnologies.com/og-image.jpg"
+/>
 
-        <link
-          rel="canonical"
-          href="https://seankrixtechnologies.com/careers"
-        />
+  <link
+    rel="icon"
+    href="/favicon.ico"
+  />
+</Head>
 
-        <link
-          rel="icon"
-          href="/favicon.ico"
-        />
-
-      </Head>
 
       <section className="relative bg-black text-white py-24 px-4 overflow-hidden">
 

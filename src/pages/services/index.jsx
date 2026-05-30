@@ -15,6 +15,7 @@ import Navbar from "@/Components/Navbar";
 import WhatsAppButton from "@/Components/WhatsAppButton";
 import Link from "next/link";
 import Layout from "@/Components/Layout";
+import Head from "next/head";
 
 // SERVICES DATA
 const services = [
@@ -60,6 +61,73 @@ export default function ServicesPage() {
     return (
 
         <Layout>
+            <Head>
+                <title>
+                    IT Services | Web Development, Mobile Apps & SEO Services | Seankrix Technologies
+                </title>
+
+                <meta
+                    name="description"
+                    content="Explore professional IT services by Seankrix Technologies including Web Development, Mobile App Development, UI/UX Design, SEO Optimization, Cloud Solutions, E-Commerce Development, and Custom Software Development."
+                />
+
+                <meta
+                    name="keywords"
+                    content="IT Services, Web Development Services, Mobile App Development, Android App Development, iOS App Development, UI UX Design Services, SEO Services India, SEO Optimization, Cloud Solutions, AWS Services, Google Cloud Services, E-Commerce Development, Shopify Development, WooCommerce Development, Custom Software Development, React JS Development, Next JS Development, MERN Stack Development, Software Development Company India, Seankrix Technologies"
+                />
+
+                <meta name="author" content="Seankrix Technologies" />
+                <meta name="robots" content="index, follow" />
+
+                <link
+                    rel="canonical"
+                    href="https://www.seankrixtechnologies.com/services"
+                />
+
+                <meta property="og:type" content="website" />
+
+                <meta
+                    property="og:title"
+                    content="IT Services | Seankrix Technologies"
+                />
+
+                <meta
+                    property="og:description"
+                    content="Professional Web Development, Mobile App Development, SEO, Cloud Solutions, UI/UX Design, and E-Commerce Development Services."
+                />
+
+                <meta
+                    property="og:url"
+                    content="https://www.seankrixtechnologies.com/services"
+                />
+
+                <meta
+                    property="og:image"
+                    content="https://www.seankrixtechnologies.com/og-image.jpg"
+                />
+
+                <meta
+                    name="twitter:card"
+                    content="summary_large_image"
+                />
+
+                <meta
+                    name="twitter:title"
+                    content="IT Services | Seankrix Technologies"
+                />
+
+                <meta
+                    name="twitter:description"
+                    content="Discover our Web Development, Mobile App Development, SEO, Cloud Solutions, and E-Commerce Services."
+                />
+
+                <meta
+                    name="twitter:image"
+                    content="https://www.seankrixtechnologies.com/og-image.jpg"
+                />
+
+            </Head>
+
 
             <section className="bg-black text-white py-20 px-4 sm:px-8">
 

@@ -46,17 +46,17 @@ export default function BlogPage() {
     <Layout>
       <Head>
         <title>
-          Blog | Seankrix Technologies
+          Blog | Web Development, SEO & Technology Insights | Seankrix Technologies
         </title>
 
         <meta
           name="description"
-          content="Read the latest articles about web development, SEO, UI/UX design, React, Next.js, digital marketing, and technology trends."
+          content="Explore the latest blogs, tutorials, and insights on Web Development, React JS, Next.js, SEO, Digital Marketing, UI/UX Design, Mobile App Development, E-Commerce, and Software Development from Seankrix Technologies."
         />
 
         <meta
           name="keywords"
-          content="Tech Blog, React Blog, Next.js Articles, SEO Tips, Web Development, UI UX Design, Digital Marketing"
+          content="Seankrix Blog, Technology Blog, Web Development Blog, React JS Tutorials, Next JS Tutorials, SEO Tips, Digital Marketing Blog, UI UX Design Blog, Mobile App Development Blog, Software Development Blog, MERN Stack Development, JavaScript Tutorials, Frontend Development, Backend Development, E-Commerce Development, Website Development Guide, Search Engine Optimization, Business Growth Strategies, Tech News, Programming Tutorials"
         />
 
         <meta
@@ -65,16 +65,15 @@ export default function BlogPage() {
         />
 
         <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1"
-        />
-
-        <meta
           name="robots"
           content="index, follow"
         />
 
-        {/* Open Graph */}
+        <link
+          rel="canonical"
+          href="https://www.seankrixtechnologies.com/blog"
+        />
+
         <meta
           property="og:type"
           content="website"
@@ -82,25 +81,29 @@ export default function BlogPage() {
 
         <meta
           property="og:url"
-          content="https://seankrixtechnologies.com/blog"
+          content="https://www.seankrixtechnologies.com/blog"
         />
 
         <meta
           property="og:title"
-          content="Blog | Seankrix Technologies"
+          content="Blog | Web Development, SEO & Technology Insights"
         />
 
         <meta
           property="og:description"
-          content="Explore insights and tutorials about development, SEO, and digital growth."
+          content="Read expert articles, tutorials, and industry insights on Web Development, SEO, Digital Marketing, Mobile Apps, and Modern Technologies."
         />
 
         <meta
           property="og:image"
-          content="https://seankrixtechnologies.com/og-image.jpg"
+          content="https://www.seankrixtechnologies.com/og-image.jpg"
         />
 
-        {/* Twitter */}
+        <meta
+          property="og:site_name"
+          content="Seankrix Technologies"
+        />
+
         <meta
           name="twitter:card"
           content="summary_large_image"
@@ -113,17 +116,12 @@ export default function BlogPage() {
 
         <meta
           name="twitter:description"
-          content="Latest articles on development, SEO, UI/UX, and technology."
+          content="Latest articles on Web Development, React JS, Next.js, SEO, Digital Marketing, UI/UX Design, and Software Development."
         />
 
         <meta
           name="twitter:image"
-          content="https://seankrixtechnologies.com/og-image.jpg"
-        />
-
-        <link
-          rel="canonical"
-          href="https://seankrixtechnologies.com/blog"
+          content="https://www.seankrixtechnologies.com/og-image.jpg"
         />
 
         <link
