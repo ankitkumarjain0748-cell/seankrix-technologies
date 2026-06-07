@@ -34,65 +34,59 @@ const metadata = {
   },
 };
 
-const portfolioProjects = [
+const projects = [
   {
-    title: "Modern Business Website",
-    category: "Web Development",
-    image:
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop",
+    title: "CadmaxPro",
     description:
-      "A modern responsive business website built with Next.js and Tailwind CSS for high performance and SEO optimization.",
-    technologies: ["Next.js", "React", "Tailwind CSS"],
+      "A modern real estate platform showcasing property listings, upcoming projects, services, and career opportunities. Built with a scalable MERN architecture and responsive user experience.",
+
+    technologies: [
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+    ],
+
+    image: "https://ankit-jain-mern-portfolio.vercel.app/static/media/cadmpro.b78b155988a8c9337829.png",
+    demo: "https://cadmaxpro.com",
+    category: "Real Estate",
   },
 
   {
-    title: "E-Commerce Store",
-    category: "E-Commerce Development",
-    image:
-      "https://images.unsplash.com/photo-1556740749-887f6717d7e4?q=80&w=1200&auto=format&fit=crop",
+    title: "StackEarn",
     description:
-      "A powerful e-commerce platform with secure payment integration, product management, and responsive design.",
-    technologies: ["React", "Node.js", "MongoDB"],
+      "A complete EdTech and referral-based earning platform where instructors can sell courses, students can learn online, and users can earn through referrals. Includes Razorpay payments, blogs, and admin management.",
+
+    technologies: [
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "JWT",
+      "Razorpay",
+    ],
+
+    image: "https://ankit-jain-mern-portfolio.vercel.app/static/media/stackearn.a801fd874d4795c22ca0.png",
+    demo: "https://stackearn.com",
+    category: "EdTech Platform",
   },
 
   {
-    title: "Mobile App UI Design",
-    category: "UI/UX Design",
-    image:
-      "https://images.unsplash.com/photo-1522542550221-31fd19575a2d?q=80&w=1200&auto=format&fit=crop",
+    title: "Cadmax Atelier",
     description:
-      "Clean and modern mobile application UI/UX design focused on user engagement and smooth experience.",
-    technologies: ["Figma", "UI/UX", "Mobile Design"],
-  },
+      "A full-stack MERN eCommerce and vendor booking platform supporting products, services, and vendor listings. Features secure payments, order tracking, package management, and complete admin control.",
 
-  {
-    title: "SEO & Digital Marketing",
-    category: "SEO Optimization",
-    image:
-      "https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?q=80&w=1200&auto=format&fit=crop",
-    description:
-      "Complete SEO optimization and digital marketing strategy to increase online visibility and conversions.",
-    technologies: ["SEO", "Marketing", "Analytics"],
-  },
+    technologies: [
+      "Next.js",
+      "React.js",
+      "Node.js",
+      "MongoDB",
+      "Razorpay",
+    ],
 
-  {
-    title: "Dashboard Web Application",
-    category: "Custom Software",
-    image:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
-    description:
-      "Advanced admin dashboard with analytics, charts, authentication, and real-time data management.",
-    technologies: ["React", "Firebase", "Chart.js"],
-  },
-
-  {
-    title: "Corporate Branding Website",
-    category: "Corporate Website",
-    image:
-      "https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1200&auto=format&fit=crop",
-    description:
-      "Professional corporate website with premium UI design, animations, and business-focused layouts.",
-    technologies: ["Next.js", "GSAP", "Tailwind"],
+    image: "https://ankit-jain-mern-portfolio.vercel.app/static/media/cad.5971de475b9494eeff0f.png",
+    demo: "https://cadmaxatelier.com/",
+    category: "eCommerce Platform",
   },
 ];
 
@@ -213,7 +207,7 @@ export default function PortfolioPage() {
           {/* Portfolio Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-            {portfolioProjects.map((project, index) => (
+            {projects.map((project, index) => (
               <div
                 key={index}
                 className="group bg-white/5 border border-white/10 rounded-3xl overflow-hidden hover:border-[#00BFFF]/50 transition-all duration-500"
@@ -263,7 +257,7 @@ export default function PortfolioPage() {
 
                   {/* Button */}
                   <Link
-                    href="/contact"
+                    href={project?.demo}
                     className="inline-flex items-center gap-3 text-[#00BFFF] font-semibold hover:gap-5 transition-all duration-300"
                   >
                     View Project

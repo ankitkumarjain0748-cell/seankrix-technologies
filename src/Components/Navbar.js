@@ -31,28 +31,14 @@ export default function Navbar() {
   }, []);
 
   // Menu Links
-// const navLinks = [
-//   { name: "Home", path: "/" },
-
-//   { name: "About", path: "/about-us" },
-
-//   { name: "Services", path: "/services" },
-
-//   { name: "Portfolio", path: "/portfolio" },
-
-//   { name: "Case Studies", path: "/case-studies" },
-
-//   { name: "Pricing", path: "/pricing" },
-
-//   { name: "FAQ", path: "/faq" },
-
-//   { name: "Blog", path: "/blog" },
-
-//   { name: "Careers", path: "/careers" },
-
-//   { name: "Contact", path: "/contact" },
-// ];
-const navLinks = [ { name: "Home", path: "/" }, { name: "About", path: "/about-us" }, { name: "Services", path: "/services" }, { name: "FAQ", path: "/faq" }, { name: "Contact", path: "/contact" }, ];
+const navLinks = [
+  { name: "Home", path: "/" },
+  { name: "About", path: "/about-us" },
+  { name: "Services", path: "/services" },
+  { name: "Training", path: "/training" },
+  { name: "Blog", path: "/blogs" },
+  { name: "Contact", path: "/contact" },
+];
   return (
     <>
       {/* Navbar */}
