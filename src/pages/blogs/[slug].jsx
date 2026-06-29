@@ -78,6 +78,131 @@ Businesses investing in user-centered design often see better customer retention
 Modern UI trends include minimal layouts, smooth animations, dark themes, and mobile-first design.
     `,
   },
+
+  "website-development-company-india-seankrix-technologies": {
+    slug: "website-development-company-india-seankrix-technologies",
+
+    title:
+      "Website Development Company in India | Why Choose Seankrix Technologies",
+
+    image: "/blogs/why-choose-seankrix-technologies.webp",
+
+    category: "Website Development",
+
+    date: "June 29, 2026",
+
+    excerpt:
+      "Looking for a trusted Website Development Company in India? Discover why businesses choose Seankrix Technologies for custom websites, eCommerce solutions, web applications, and SEO-friendly digital experiences built with modern technologies.",
+
+    keywords:
+      "Website Development Company in India, Custom Website Development, Business Website Development, Responsive Website Design, SEO Friendly Website, React Development Company, Next.js Development Company, Node.js Development, Laravel Development, Full Stack Development, eCommerce Website Development, Web Application Development, Software Development Company, Seankrix Technologies",
+
+    author: "Seankrix Technologies",
+
+    readTime: "8 min read",
+
+    content: `
+
+# Website Development Company in India – Why Choose Seankrix Technologies?
+
+Your website is the digital foundation of your business. It creates the first impression, builds trust, generates leads, and helps customers discover your products and services online.
+
+At Seankrix Technologies, we develop modern, fast, secure, and SEO-friendly websites tailored to your business goals. Our solutions are designed to improve user experience, increase search engine visibility, and support long-term business growth.
+
+ What Makes Seankrix Technologies Different?
+
+* 100% Custom Website Development
+* Responsive Mobile-First Design
+* SEO-Optimized Website Structure
+* Fast Loading Performance
+* Secure Development Practices
+* Modern Tech Stack (React, Next.js, Node.js, Laravel)
+* Scalable Architecture
+* Ongoing Support & Maintenance
+
+ Our Website Development Services
+
+* Business Website Development
+* Corporate Websites
+* Portfolio Websites
+* Landing Pages
+* eCommerce Website Development
+* Custom Web Application Development
+* CRM & ERP Development
+* School & Hospital Management Systems
+* Real Estate Websites
+* Booking Platforms
+
+ Technologies We Use
+
+* React.js
+* Next.js
+* Node.js
+* Laravel
+* PHP
+* TypeScript
+* MongoDB
+* MySQL
+* Firebase
+* Tailwind CSS
+
+ Why SEO-Friendly Development Matters
+
+Every website we build follows modern SEO practices, including:
+
+* Optimized Meta Tags
+* Clean URL Structure
+* Schema Markup
+* Core Web Vitals Optimization
+* Image Optimization
+* Mobile-First Design
+* Fast Page Speed
+* Internal Linking
+
+These improvements help search engines understand your website and improve your chances of ranking for relevant keywords.
+
+ Our Development Process
+
+1. Requirement Analysis
+2. UI/UX Design
+3. Development
+4. Quality Testing
+5. SEO Optimization
+6. Deployment
+7. Ongoing Support
+
+ Industries We Serve
+
+Healthcare, Education, Real Estate, Finance, Manufacturing, Retail, Hospitality, Travel, Legal, Construction, Automotive, and Startups.
+
+ Frequently Asked Questions
+
+# Do you build custom websites?
+
+Yes. Every website is designed and developed according to your business requirements.
+
+# Will my website be SEO-friendly?
+
+Yes. We follow modern technical SEO best practices from the start.
+
+# Which technologies do you use?
+
+React.js, Next.js, Node.js, Laravel, PHP, MongoDB, MySQL, Firebase, and other modern frameworks.
+
+# Do you provide maintenance?
+
+Yes. We offer website maintenance, updates, security monitoring, and technical support.
+
+ Conclusion
+
+Choosing the right website development partner is essential for online success.
+
+At Seankrix Technologies, we combine design, development, performance optimization, and SEO to build websites that help businesses attract customers, improve conversions, and grow online.
+
+If you're looking for a reliable Website Development Company in India, we're ready to help bring your vision to life.
+`
+  }
+
 };
 
 export default function BlogDetailsPage() {

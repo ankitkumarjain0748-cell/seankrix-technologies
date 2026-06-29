@@ -17,6 +17,43 @@ const blogs = [
     description:
       "Explore the latest trends in React, Next.js, AI integration, and modern frontend development.",
   },
+{
+slug: "website-development-company-india-seankrix-technologies",
+
+title: "Why Choose Seankrix Technologies for Website Development in India",
+
+image: "/blogs/why-choose-seankrix-technologies.webp",
+
+category: "Website Development",
+
+date: "June 29, 2026",
+
+description:
+"Looking for a trusted Website Development Company in India? Discover why businesses choose Seankrix Technologies for custom website development, eCommerce solutions, SEO-friendly websites, React.js, Next.js, Laravel, Node.js, and full-stack web application development.",
+
+keywords: [
+"Website Development Company",
+"Website Development Company India",
+"Custom Website Development",
+"Business Website Development",
+"Professional Website Design",
+"SEO Friendly Website",
+"Responsive Website Development",
+"React JS Development",
+"Next.js Development",
+"Laravel Development",
+"Node.js Development",
+"Full Stack Development",
+"Ecommerce Website Development",
+"Software Development Company",
+"Seankrix Technologies"
+],
+
+author: "Seankrix Technologies",
+
+readTime: "8 min read"
+},
+
 
   {
     slug: "seo-strategies-2026",
