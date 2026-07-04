@@ -38,13 +38,13 @@ export default function JoinAgency() {
             <span className="text-[#00BFFF] text-2xl">*</span> Join Our Network
           </p>
 
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-light leading-tight">
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-light leading-tight">
             Join our{" "}
             <span className="text-[#00BFFF] font-bold">
               digital community
             </span>{" "}
             & grow with us
-          </h1>
+          </h2>
         </div>
 
         <div>
@@ -111,7 +111,7 @@ export default function JoinAgency() {
       {/* Bottom CTA */}
       <div className="relative z-10 text-center mt-20">
         <h2 className="text-2xl sm:text-3xl font-bold">
-          Let’s build your next big idea together 
+          Let’s build your next big idea together
         </h2>
         <p className="text-gray-400 mt-3">
           Connect with us today and start your digital journey.

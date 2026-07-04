@@ -4,7 +4,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { BsTelephone } from "react-icons/bs";
-import { HiOutlineEnvelope } from "react-icons/hi2";
+import { HiOutlineEnvelope as EnvelopeIcon } from "react-icons/hi2";
 import {
   FaFacebookF,
   FaInstagram,
@@ -19,8 +19,8 @@ const quickLinks = [
   { name: "Services", href: "/services" },
   { name: "Portfolio", href: "/portfolio" },
   { name: "Training", href: "/training" },
-  { name: "Blog", href: "/blog" },
-  { name: "FAQ", href: "/faq" },
+  { name: "Blog", href: "/blogs" },
+  { name: "FAQ", href: "/faqs" },
   { name: "Contact", href: "/contact" },
 ];
 
@@ -33,8 +33,6 @@ const servicesLinks = [
   { name: "E-Commerce Development", href: "/services/ecommerce-development" },
 ];
 
-
-
 const companyLinks = [
   { name: "Careers", href: "/careers" },
   { name: "Case Studies", href: "/case-studies" },
@@ -45,161 +43,153 @@ const companyLinks = [
 
 const socialIcons = [
   {
-    icon: <FaFacebookF />,
+    icon: <FaFacebookF size={16} />,
     href: "https://www.facebook.com/profile.php?id=61589234190650",
   },
   {
-    icon: <FaInstagram />,
+    icon: <FaInstagram size={16} />,
     href: "https://www.instagram.com/seankrix_technologies_/",
   },
   {
-    icon: <FaLinkedinIn />,
+    icon: <FaLinkedinIn size={16} />,
     href: "https://www.linkedin.com/in/seankrix-technologies-73b269407/",
   },
 ];
 
 export default function Footer() {
   return (
-    <footer className="relative overflow-hidden bg-[#050816] text-white border-t border-white/10">
-
-      {/* Background Glow */}
-      <div className="absolute inset-0 z-0">
-        <Glow position="left" size={500} />
+    <footer className="relative overflow-hidden bg-[#03050d] text-white border-t border-white/5">
+      {/* Dynamic Ambient Background Glows */}
+      <div className="absolute inset-0 z-0 pointer-events-none opacity-40">
+        <Glow position="left" size={600} />
       </div>
+      <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-[#00BFFF]/5 blur-[150px] rounded-full pointer-events-none"></div>
 
-      <div className="relative z-10 max-w-[1400px] mx-auto px-6 py-20">
+      <div className="relative z-10 max-w-[1400px] mx-auto px-4 sm:px-6 md:px-8">
+        
+        {/* Premium Integrated CTA Box Area */}
+        <div className="pt-16 pb-6">
+          <div className="rounded-[32px] border border-white/5 bg-gradient-to-b from-white/[0.02] to-transparent p-8 md:p-12 text-center relative overflow-hidden backdrop-blur-md shadow-2xl">
+            {/* Inner Accent Glow */}
+            <div className="absolute -top-24 left-1/2 -translate-x-1/2 w-[300px] h-[150px] bg-[#00BFFF]/10 blur-[60px] rounded-full pointer-events-none"></div>
+            
+            <h2 className="text-2xl md:text-4xl font-extrabold tracking-tight text-white">
+              Ready To Grow Your Business?
+            </h2>
+            <p className="text-gray-400 mt-3 text-sm md:text-base max-w-xl mx-auto font-light leading-relaxed">
+              Let's engineer powerful, high-converting digital solutions together. Contact our experts today for a strategy blueprint session.
+            </p>
+            <Link
+              href="/contact"
+              className="inline-flex mt-8 bg-[#00BFFF] hover:bg-white text-black font-semibold text-sm px-8 py-3.5 rounded-xl transition-all duration-300 shadow-xl shadow-[#00BFFF]/10 hover:shadow-white/5"
+            >
+              Get Free Consultation
+            </Link>
+          </div>
+        </div>
 
-        {/* Top Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
-
-          {/* Company Info */}
-          <div className="">
-
-            <Link href="/">
+        {/* Main Informational Links Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-10 py-16 border-t border-white/5 mt-6">
+          
+          {/* Brand Directory Column */}
+          <div className="lg:col-span-4 space-y-6">
+            <Link href="/" className="inline-block transition-transform duration-200 hover:scale-[1.02]">
               <Image
                 src="/seankrix_technologieslogo.png"
-                alt="Seankrix Technologies"
+                alt="Seankrix Technologies Logo"
                 width={180}
                 height={60}
-                className="mb-6"
+                className="h-auto w-auto"
+                priority
               />
             </Link>
-
-            <p className="text-gray-400 text-sm leading-relaxed">
-              Seankrix Technologies is a leading software development company
-              specializing in Web Development, Mobile App Development,
-              UI/UX Design, Digital Marketing, SEO, and Professional IT
-              Training Programs.
+            <p className="text-gray-400 text-xs md:text-sm leading-relaxed font-light">
+              Seankrix Technologies is an elite software ecosystem architect specializing in fast Web Architecture, Mobile Frameworks, UI/UX Systems, and Enterprise Growth Blueprints.
             </p>
-
-            <div className="mt-6 space-y-3">
-
-              <div className="flex items-center gap-3">
-                <BsTelephone className="text-[#00BFFF]" />
-                <span className="text-sm">
-                  +91 8824744976
-                </span>
+            
+            {/* Micro Contact Information Strip */}
+            <div className="space-y-3.5 pt-2">
+              <div className="flex items-center gap-3 text-gray-300 hover:text-white transition-colors duration-200 group">
+                <div className="text-[#00BFFF] group-hover:scale-110 transition-transform"><BsTelephone size={14} /></div>
+                <span className="text-xs md:text-sm font-light">+91 88247 44976</span>
               </div>
-
-              <div className="flex items-center gap-3">
-                <HiOutlineEnvelope className="text-[#00BFFF]" />
-                <span className="text-sm break-all">
-                  info@seankrixtechnologies.com
-                </span>
+              <div className="flex items-center gap-3 text-gray-300 hover:text-white transition-colors duration-200 group">
+                <div className="text-[#00BFFF] group-hover:scale-110 transition-transform"><EnvelopeIcon size={14} /></div>
+                <span className="text-xs md:text-sm font-light break-all">info@seankrixtechnologies.com</span>
               </div>
-
-              <div className="flex items-center gap-3">
-                <FaMapMarkerAlt className="text-[#00BFFF]" />
-                <span className="text-sm">
-                  Jaipur, Rajasthan, India
-                </span>
-              </div>
-
+             <div className="flex items-start gap-3 text-gray-300">
+  <div className="text-[#00BFFF] mt-1 shrink-0">
+    <FaMapMarkerAlt size={14} />
+  </div>
+  <span className="text-xs md:text-sm font-light leading-relaxed">
+    House No. 2, Jain Mohan Badi,<br />
+    Near Surajpole Gate, Jaipur,<br />
+    Rajasthan, India - 302003
+  </span>
+</div>
             </div>
 
-            <div className="flex gap-3 mt-6">
-
-              {socialIcons.map((item, i) => (
+            {/* Social Connection Badges */}
+            <div className="flex gap-2.5 pt-2">
+              {socialIcons?.map((item, i) => (
                 <Link
                   key={i}
                   href={item.href}
                   target="_blank"
-                  className="
-                    w-10 h-10
-                    rounded-full
-                    border border-white/10
-                    bg-white/5
-                    flex items-center justify-center
-                    hover:bg-[#00BFFF]
-                    hover:text-black
-                    transition-all duration-300
-                  "
+                  rel="noopener noreferrer"
+                  className="w-9 h-9 rounded-xl border border-white/5 bg-white/[0.02] flex items-center justify-center text-gray-400 hover:text-black hover:bg-[#00BFFF] hover:border-[#00BFFF] transition-all duration-300 shadow-md"
                 >
                   {item.icon}
                 </Link>
               ))}
-
             </div>
-
           </div>
 
-          {/* Quick Links */}
-          <div>
-            <h3 className="font-semibold text-lg mb-6 text-white">
+          {/* Directory Links Column 1 */}
+          <div className="lg:col-span-2 lg:pl-4">
+            <h3 className="font-semibold text-sm tracking-wider uppercase mb-5 text-white">
               Quick Links
             </h3>
-
-            <ul className="space-y-3 text-gray-400 text-sm">
-              {quickLinks.map((link) => (
+            <ul className="space-y-3 text-gray-400 text-xs md:text-sm font-light">
+              {quickLinks?.map((link) => (
                 <li key={link.name}>
-                  <Link
-                    href={link.href}
-                    className="hover:text-[#00BFFF] transition"
-                  >
+                  <Link href={link.href} className="relative hover:text-[#00BFFF] transition-colors duration-200 group block py-0.5">
                     {link.name}
+                    <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#00BFFF] transition-all duration-300 group-hover:w-12"></span>
                   </Link>
                 </li>
               ))}
             </ul>
           </div>
 
-          {/* Services */}
-          <div>
-            <h3 className="font-semibold text-lg mb-6 text-white">
-              Services
+          {/* Directory Links Column 2 */}
+          <div className="lg:col-span-3">
+            <h3 className="font-semibold text-sm tracking-wider uppercase mb-5 text-white">
+              Our Services
             </h3>
-
-            <ul className="space-y-3 text-gray-400 text-sm">
-              {servicesLinks.map((link) => (
+            <ul className="space-y-3 text-gray-400 text-xs md:text-sm font-light">
+              {servicesLinks?.map((link) => (
                 <li key={link.name}>
-                  <Link
-                    href={link.href}
-                    className="hover:text-[#00BFFF] transition"
-                  >
+                  <Link href={link.href} className="relative hover:text-[#00BFFF] transition-colors duration-200 group block py-0.5">
                     {link.name}
+                    <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#00BFFF] transition-all duration-300 group-hover:w-12"></span>
                   </Link>
                 </li>
               ))}
             </ul>
           </div>
 
-          {/* Training */}
-         
-
-          {/* Company */}
-          <div>
-            <h3 className="font-semibold text-lg mb-6 text-white">
+          {/* Directory Links Column 3 */}
+          <div className="lg:col-span-3">
+            <h3 className="font-semibold text-sm tracking-wider uppercase mb-5 text-white">
               Company
             </h3>
-
-            <ul className="space-y-3 text-gray-400 text-sm">
-              {companyLinks.map((link) => (
+            <ul className="space-y-3 text-gray-400 text-xs md:text-sm font-light">
+              {companyLinks?.map((link) => (
                 <li key={link.name}>
-                  <Link
-                    href={link.href}
-                    className="hover:text-[#00BFFF] transition"
-                  >
+                  <Link href={link.href} className="relative hover:text-[#00BFFF] transition-colors duration-200 group block py-0.5">
                     {link.name}
+                    <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#00BFFF] transition-all duration-300 group-hover:w-12"></span>
                   </Link>
                 </li>
               ))}
@@ -208,57 +198,16 @@ export default function Footer() {
 
         </div>
 
-        {/* CTA Section */}
-        <div className="mt-16 rounded-3xl border border-cyan-500/20 bg-gradient-to-r from-cyan-500/10 to-blue-500/10 p-8 text-center">
-
-          <h3 className="text-3xl font-bold">
-            Ready To Grow Your Business?
-          </h3>
-
-          <p className="text-gray-400 mt-4 max-w-2xl mx-auto">
-            Let's build powerful digital solutions together.
-            Contact our team today and get a free consultation.
-          </p>
-
-          <Link
-            href="/contact"
-            className="
-              inline-flex
-              mt-6
-              px-8
-              py-4
-              rounded-full
-              bg-gradient-to-r
-              from-cyan-500
-              to-blue-600
-              font-semibold
-              text-white
-              hover:scale-105
-              transition-all
-              duration-300
-            "
-          >
-            Get Free Consultation
-          </Link>
-
-        </div>
-
-        {/* Copyright */}
-        <div className="mt-16 pt-8 border-t border-white/10">
-
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-
-            <p className="text-gray-500 text-sm text-center md:text-left">
-              © {new Date().getFullYear()} Seankrix Technologies.
-              All Rights Reserved.
+        {/* Bottom Copyright Meta Area */}
+        <div className="py-8 border-t border-white/5 text-gray-500 text-xs font-light tracking-wide">
+          <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
+            <p className="text-center sm:text-left">
+              © {new Date().getFullYear()} Seankrix Technologies. All Rights Reserved.
             </p>
-
-            <p className="text-gray-500 text-sm text-center md:text-right">
-              Designed & Developed by Seankrix Technologies
+            <p className="text-center sm:text-right hover:text-gray-400 transition-colors duration-200">
+              Designed & Engineered at Seankrix Lab
             </p>
-
           </div>
-
         </div>
 
       </div>

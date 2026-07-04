@@ -82,21 +82,21 @@ const navLinks = [
             <div className="flex items-center gap-3">
               <Link
                 href="https://www.instagram.com/seankrix_technologies_/"
-                className="w-9 h-9 rounded-full border border-white flex items-center justify-center hover:bg-[#00BFFF] transition duration-300"
+              className="bg-[#00BFFF] hover:bg-[#0099cc] text-white px-2 py-2 rounded-full font-medium transition duration-300"
               >
                 <FaInstagram />
               </Link>
 
               <Link
                 href="https://www.facebook.com/profile.php?id=61589234190650"
-                className="w-9 h-9 rounded-full border border-white   flex items-center justify-center hover:bg-[#00BFFF] transition duration-300"
+              className="bg-[#00BFFF] hover:bg-[#0099cc] text-white px-2 py-2 rounded-full font-medium transition duration-300"
               >
                 <FaFacebookF />
               </Link>
 
               <Link
                 href="https://www.linkedin.com/in/seankrix-technologies-73b269407/"
-                className="w-9 h-9 rounded-full border border-white  flex items-center justify-center hover:bg-[#00BFFF] transition duration-300"
+              className="bg-[#00BFFF] hover:bg-[#0099cc] text-white px-2 py-2 rounded-full font-medium transition duration-300"
               >
                 <FaLinkedinIn />
               </Link>

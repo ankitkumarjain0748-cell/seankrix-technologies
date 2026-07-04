@@ -59,12 +59,12 @@ export default function Whoweare() {
               <span className="text-[#00BFFF] text-xl">*</span> WHO WE ARE
             </p>
 
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl leading-tight">
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl leading-tight">
               Your trusted partner in{" "}
               <span className="text-[#00BFFF] font-bold">
                 IT & digital transformation
               </span>
-            </h1>
+            </h2>
           </div>
 
           <p className="text-gray-400 leading-relaxed text-lg">

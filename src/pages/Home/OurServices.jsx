@@ -14,6 +14,7 @@ import {
   FaShoppingCart,
 } from "react-icons/fa";
 import Link from "next/link";
+import { GiH2O } from "react-icons/gi";
 
 export default function OurServices() {
 
@@ -71,9 +72,9 @@ export default function OurServices() {
           <p className="flex items-center gap-2 text-xl font-bold tracking-widest uppercase mb-4 font" >
             <span className="text-[#00BFFF] text-2xl">*</span> Explore Our Services
           </p>
-          <h1 className="text-3xl sm:text-6xl lg:text-5xl font-light leading-tight font" >
+          <h2 className="text-3xl sm:text-6xl lg:text-5xl font-light leading-tight font" >
             Powerful <span className="text-[#00BFFF] font-bold">IT Solutions</span> for Your Business Growth
-          </h1>
+          </h2>
         </div>
         <div className="flex flex-col items-start" >
           <p className="text-gray-300 leading-relaxed mt-4">
@@ -114,7 +115,7 @@ export default function OurServices() {
               </div>
 
               <div>
-                <h2 className="text-2xl font-bold mb-3 font" data-aos="fade-up" data-aos-anchor-placement="center-bottom">{service.title}</h2>
+                <h3 className="text-2xl font-bold mb-3 font" data-aos="fade-up" data-aos-anchor-placement="center-bottom">{service.title}</h3>
                 <p className="text-gray-400 leading-relaxed font" data-aos="fade-up" data-aos-anchor-placement="center-bottom">{service.desc}</p>
               </div>
             </Link>

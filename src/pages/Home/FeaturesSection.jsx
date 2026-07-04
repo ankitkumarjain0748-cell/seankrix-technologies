@@ -89,10 +89,10 @@ export default function FeaturesSection() {
               <span className="text-[#00BFFF]">*</span> WHY CHOOSE US
             </p>
 
-            <h1 className="text-4xl md:text-5xl font-bold leading-tight">
+            <h2 className="text-4xl md:text-5xl font-bold leading-tight">
               Smart <span className="text-[#00BFFF]">IT Solutions</span> for
               modern businesses
-            </h1>
+            </h2>
           </div>
 
           <div>
@@ -140,9 +140,9 @@ export default function FeaturesSection() {
           <div className="grid lg:grid-cols-2 gap-8 items-center">
 
             <div>
-              <h2 className="text-3xl font-bold mb-3">
+              <h3 className="text-3xl font-bold mb-3">
                 Complete IT & Digital Ecosystem
-              </h2>
+              </h3>
               <p className="text-gray-400">
                 From idea to launch — we design, develop, and scale your business digitally.
               </p>

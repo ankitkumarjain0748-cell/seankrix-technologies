@@ -1,12 +1,9 @@
 import EnrollNowPopup from "@/Components/EnrollNowPopup";
 import Layout from "@/Components/Layout";
 import { useState } from "react";
+import Head from "next/head";
 
-export const metadata = {
-    title: "IT Training & Internship Programs | Seankrix Technologies",
-    description:
-        "Join Seankrix Technologies for MERN Stack, React Native, Python, and Java Training Programs with Live Projects, Internship Opportunities, and Industry Mentorship.",
-};
+
 
 const courses = [
     {
@@ -86,8 +83,180 @@ export default function TrainingPage() {
 
     const [selectedCourse, setSelectedCourse] = useState("");
     const [isEnrollOpen, setIsEnrollOpen] = useState(false);
+
+
+
     return (
         <Layout>
+
+            <Head>
+                <title>
+                    Best IT Training & Internship in Jaipur | MERN, React Native, Python &
+                    Java | Seankrix Technologies
+                </title>
+
+                <meta
+                    name="description"
+                    content="Join Seankrix Technologies for MERN Stack, React Native, Python and Java Training with Live Projects, Internship, Placement Assistance, Industry Mentorship and Certification."
+                />
+
+                <meta
+                    name="keywords"
+                    content="IT Training Jaipur, MERN Stack Training Jaipur, React Native Training, Python Training, Java Training, Internship Jaipur, Software Training Institute Jaipur, Live Projects, Web Development Course, Seankrix Technologies"
+                />
+
+                <meta name="author" content="Seankrix Technologies" />
+                <meta name="publisher" content="Seankrix Technologies" />
+
+                <meta
+                    name="robots"
+                    content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1"
+                />
+
+                <meta name="googlebot" content="index,follow" />
+
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+                <meta name="theme-color" content="#00BFFF" />
+
+                <meta httpEquiv="content-language" content="en-IN" />
+
+                <meta name="geo.region" content="IN-RJ" />
+
+                <meta name="geo.country" content="India" />
+
+                <link
+                    rel="canonical"
+                    href="https://www.seankrixtechnologies.com/training"
+                />
+
+                <link
+                    rel="alternate"
+                    hrefLang="en-IN"
+                    href="https://www.seankrixtechnologies.com/training"
+                />
+
+                <meta property="og:type" content="website" />
+
+                <meta property="og:locale" content="en_IN" />
+
+                <meta property="og:site_name" content="Seankrix Technologies" />
+
+                <meta
+                    property="og:title"
+                    content="Best IT Training & Internship Programs | Seankrix Technologies"
+                />
+
+                <meta
+                    property="og:description"
+                    content="Learn MERN Stack, React Native, Python and Java with Live Projects, Internship, Career Guidance and Placement Assistance."
+                />
+
+                <meta
+                    property="og:url"
+                    content="https://www.seankrixtechnologies.com/training"
+                />
+
+                <meta
+                    property="og:image"
+                    content="https://www.seankrixtechnologies.com/og-training.webp"
+                />
+
+                <meta property="og:image:width" content="1200" />
+
+                <meta property="og:image:height" content="630" />
+
+                <meta
+                    name="twitter:card"
+                    content="summary_large_image"
+                />
+
+                <meta
+                    name="twitter:title"
+                    content="IT Training & Internship | Seankrix Technologies"
+                />
+
+                <meta
+                    name="twitter:description"
+                    content="Industry Ready Training with Internship and Placement Assistance."
+                />
+
+                <meta
+                    name="twitter:image"
+                    content="https://www.seankrixtechnologies.com/og-training.webp"
+                />
+
+                <link rel="icon" href="/favicon.ico" />
+
+                <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+                <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+                <link
+                    rel="preconnect"
+                    href="https://fonts.gstatic.com"
+                    crossOrigin="anonymous"
+                />
+
+                <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{
+                        __html: JSON.stringify({
+                            "@context": "https://schema.org",
+                            "@type": "EducationalOrganization",
+                            name: "Seankrix Technologies",
+                            url: "https://www.seankrixtechnologies.com",
+                            logo: "https://www.seankrixtechnologies.com/logo.png",
+                            email: "info@seankrixtechnologies.com",
+                            telephone: "+91-8824744976"
+                        }),
+                    }}
+                />
+
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{
+                        __html: JSON.stringify({
+                            "@context": "https://schema.org",
+                            "@type": "Course",
+                            name: "IT Training & Internship Programs",
+                            provider: {
+                                "@type": "Organization",
+                                name: "Seankrix Technologies",
+                                sameAs: "https://www.seankrixtechnologies.com"
+                            },
+                            description:
+                                "Professional MERN Stack, React Native, Python and Java Training with Live Projects, Internship and Placement Assistance."
+                        }),
+                    }}
+                />
+
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{
+                        __html: JSON.stringify({
+                            "@context": "https://schema.org",
+                            "@type": "BreadcrumbList",
+                            itemListElement: [
+                                {
+                                    "@type": "ListItem",
+                                    position: 1,
+                                    name: "Home",
+                                    item: "https://www.seankrixtechnologies.com"
+                                },
+                                {
+                                    "@type": "ListItem",
+                                    position: 2,
+                                    name: "Training",
+                                    item: "https://www.seankrixtechnologies.com/training"
+                                }
+                            ]
+                        }),
+                    }}
+                />
+            </Head>
             <section
                 id="courses"
                 className="relative py-24 overflow-hidden"
@@ -99,23 +268,64 @@ export default function TrainingPage() {
                 <div className="container mx-auto px-6 relative z-10">
 
                     {/* Heading */}
-                    <div className="text-center mb-20">
-                        <span className="inline-block px-4 py-2 rounded-full border border-cyan-500/20 bg-cyan-500/10 text-cyan-400 text-sm font-medium">
-                            Professional IT Training Programs
-                        </span>
+                  <div className="text-center mb-20 max-w-5xl mx-auto">
 
-                        <h2 className="text-4xl md:text-6xl font-bold mt-6">
-                            Choose Your
-                            <span className="block text-cyan-400">
-                                Career Path
-                            </span>
-                        </h2>
+  {/* Badge */}
+  <span className="inline-flex items-center gap-2 px-5 py-2 rounded-full border border-cyan-400/30 bg-cyan-500/10 text-cyan-400 text-sm font-semibold tracking-wide uppercase">
+    🚀 Industry-Oriented Training Programs
+  </span>
 
-                        <p className="max-w-2xl mx-auto text-gray-400 mt-6 text-lg">
-                            Learn from industry experts, work on live projects,
-                            build real-world applications, and become job-ready.
-                        </p>
-                    </div>
+  {/* Main Heading */}
+  <h1 className="mt-8 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight tracking-tight text-white">
+    Best{" "}
+    <span className="bg-gradient-to-r from-cyan-400 via-sky-400 to-blue-500 bg-clip-text text-transparent">
+      IT Training
+    </span>{" "}
+    & Internship
+    <br />
+    Programs in{" "}
+    <span className="text-cyan-400">
+      Jaipur
+    </span>
+  </h1>
+
+  {/* Description */}
+  <p className="mt-8 text-lg md:text-xl text-gray-300 leading-8 max-w-3xl mx-auto">
+    Learn{" "}
+    <strong className="text-white">
+      MERN Stack, React Native, Python, Java,
+      Web Development
+    </strong>{" "}
+    and other in-demand technologies through
+    <span className="text-cyan-400 font-semibold">
+      {" "}Live Projects
+    </span>,
+    Industry Mentorship,
+    Internship Opportunities,
+    Career Guidance and Placement Assistance
+    at <strong className="text-white">Seankrix Technologies</strong>.
+  </p>
+
+  {/* CTA Buttons */}
+  <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4">
+
+    <button
+      onClick={() => setIsEnrollOpen(true)}
+      className="px-8 py-4 rounded-full bg-cyan-500 hover:bg-cyan-400 text-black font-semibold transition-all duration-300"
+    >
+      Enroll Now →
+    </button>
+
+    <a
+      href="/contact"
+      className="px-8 py-4 rounded-full border border-cyan-500 text-cyan-400 hover:bg-cyan-500 hover:text-black transition-all duration-300"
+    >
+      Talk to an Expert
+    </a>
+
+  </div>
+
+</div>
 
                     {/* Bento Grid */}
                     <div className="grid lg:grid-cols-12 gap-6">

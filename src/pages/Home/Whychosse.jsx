@@ -64,10 +64,10 @@ export default function Whychosse() {
             <p className="flex items-center gap-2 text-xl font-bold tracking-[0.2em] uppercase mb-4">
               <span className="text-[#00BFFF] text-2xl">*</span>WHY CHOOSE US
             </p>
-            <h1 className="text-4xl md:text-5xl lg:text-5xl font-bold leading-tight">
+            <h2 className="text-4xl md:text-5xl lg:text-5xl font-bold leading-tight">
               Reliable <span className="text-[#00BFFF]">IT solutions</span> for your business success
               <span className="text-[#00BFFF]">.</span>
-            </h1>
+            </h2>
           </div>
           <div data-aos="fade-left">
             <p className="text-gray-400 leading-relaxed lg:pl-8">
