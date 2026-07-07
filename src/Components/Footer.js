@@ -27,9 +27,9 @@ const quickLinks = [
 const servicesLinks = [
   { name: "Web Development", href: "/services/web-development" },
   { name: "Mobile App Development", href: "/services/app-development" },
-  { name: "UI/UX Design", href: "/services/ui-ux" },
+  { name: "UI/UX Design", href: "/services/ui-ux-design" },
   { name: "Digital Marketing", href: "/services/digital-marketing" },
-  { name: "SEO Services", href: "/services/seo" },
+  { name: "SEO Services", href: "/services/seo-optimization" },
   { name: "E-Commerce Development", href: "/services/ecommerce-development" },
 ];
 

@@ -7,13 +7,104 @@ import Link from "next/link";
 import React from "react";
 
 const blogs = [
+
   {
-    slug: "future-of-web-development",
-    title: "The Future of Modern Web Development",
-    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop",
-    category: "Web Development",
-    date: "May 2026",
-    description: "Explore the latest trends in React, Next.js, AI integration, and modern frontend development.",
+    slug: "static-vs-dynamic-website",
+    title: "Static vs Dynamic Website – Which One Should You Choose in 2026?",
+    image: "/blogs/static-vs-dynamic-website.webp",
+    category: "Website Development",
+    date: "July 7, 2026",
+    description:
+      "Learn the difference between static and dynamic websites, their advantages, disadvantages, SEO benefits, costs, and discover which option is best for your business in 2026.",
+    keywords: [
+      "Static Website",
+      "Dynamic Website",
+      "Static vs Dynamic Website",
+      "Website Development Company",
+      "Business Website",
+      "Custom Website Development",
+      "Responsive Website",
+      "SEO Friendly Website",
+      "React.js Development",
+      "Next.js Development",
+      "Node.js Development",
+      "Website Development India",
+      "Web Development",
+      "Business Growth",
+      "Seankrix Technologies"
+    ],
+    author: "Seankrix Technologies",
+    readTime: "8 min read"
+  },
+  {
+  slug: "your-business-needs-more-than-just-a-website",
+  title: "Your Business Doesn't Need Just Another Website — It Needs a Growth Platform",
+  image: "/blogs/business-growth-platform.webp",
+  category: "Website Development",
+  date: "July 7, 2026",
+  description:
+    "A business website should do more than look good. Learn how a strategic, SEO-friendly digital platform builds trust, generates qualified leads, and supports long-term business growth.",
+  keywords: [
+    "Business Website",
+    "Professional Website",
+    "Website Development Company",
+    "Lead Generation Website",
+    "Business Growth",
+    "SEO Friendly Website",
+    "Custom Website Development",
+    "Seankrix Technologies"
+  ],
+  author: "Seankrix Technologies",
+  readTime: "7 min read"
+},
+  {
+    slug: "why-every-business-needs-a-professional-website-2026",
+    title: "Why Every Business Needs a Professional Website in 2026",
+    image: "/blogs/why-every-business-needs-a-professional-website-2026.webp",
+    category: "Website Development",
+    date: "July 7, 2026",
+    description:
+      "Discover why every business needs a professional website in 2026. Learn how a modern, SEO-friendly website builds trust, generates leads, improves Google rankings, and drives long-term business growth.",
+    keywords: [
+      "Professional Website",
+      "Business Website",
+      "Website Development",
+      "Website Development Company",
+      "Custom Website Development",
+      "SEO Friendly Website",
+      "Responsive Website",
+      "Business Growth",
+      "Web Development",
+      "Website Design",
+      "Lead Generation",
+      "Digital Presence",
+      "Google SEO",
+      "Modern Website",
+      "Seankrix Technologies"
+    ],
+    author: "Seankrix Technologies",
+    readTime: "7 min read"
+  },
+  {
+    slug: "website-development-cost-india",
+    title: "How Much Does Website Development Cost in India in 2026?",
+    image: "/blogs/website-development-cost-india.webp",
+    category: "Website Development",
+    date: "July 7, 2026",
+    description:
+      "Learn the average website development cost in India for business, eCommerce, portfolio, and custom websites. Understand pricing factors and choose the right solution for your budget.",
+    keywords: [
+      "Website Development Cost India",
+      "Website Development Price",
+      "Business Website Cost",
+      "Custom Website Development",
+      "eCommerce Website Cost",
+      "Website Development Company",
+      "Website Development Services",
+      "Seankrix Technologies"
+    ],
+    author: "Seankrix Technologies",
+    readTime: "8 min read"
   },
   {
     slug: "website-development-company-india-seankrix-technologies",
@@ -42,22 +133,33 @@ const blogs = [
     author: "Seankrix Technologies",
     readTime: "8 min read"
   },
-  {
-    slug: "seo-strategies-2026",
-    title: "Top SEO Strategies To Rank Higher in 2026",
-    image: "https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?q=80&w=1200&auto=format&fit=crop",
-    category: "SEO",
-    date: "May 2026",
-    description: "Learn advanced SEO techniques to improve rankings, traffic, and online visibility.",
-  },
-  {
-    slug: "importance-of-ui-ux",
-    title: "Why UI/UX Design Matters For Business",
-    image: "https://images.unsplash.com/photo-1559028012-481c04fa702d?q=80&w=1200&auto=format&fit=crop",
-    category: "UI/UX Design",
-    date: "May 2026",
-    description: "Discover how great UI/UX design improves conversions and customer engagement.",
-  },
+ {
+  slug: "seo-strategies-2026",
+  title: "Top SEO Strategies To Rank Higher in 2026",
+  image: "https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?q=80&w=1200&auto=format&fit=crop",
+  category: "SEO",
+  date: "May 2026",
+  description:
+    "Discover the top SEO strategies for 2026, including on-page SEO, technical SEO, keyword research, Core Web Vitals, and content optimization to improve Google rankings and drive organic traffic.",
+},
+{
+  slug: "importance-of-ui-ux",
+  title: "Why UI/UX Design Matters For Business",
+  image: "https://images.unsplash.com/photo-1559028012-481c04fa702d?q=80&w=1200&auto=format&fit=crop",
+  category: "UI/UX Design",
+  date: "May 2026",
+  description:
+    "Learn how effective UI/UX design enhances user experience, builds customer trust, increases conversions, and helps businesses create high-performing, user-friendly websites and applications.",
+},
+{
+  slug: "future-of-web-development",
+  title: "The Future of Modern Web Development",
+  image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop",
+  category: "Web Development",
+  date: "May 2026",
+  description:
+    "Explore the future of modern web development with React, Next.js, AI-powered tools, server-side rendering, and emerging technologies that help businesses build faster, scalable, and SEO-friendly web applications.",
+},
 ];
 
 export default function BlogPage() {
@@ -81,7 +183,7 @@ export default function BlogPage() {
           content="Seankrix Blog, Technology Blog, Web Development Blog, React JS Tutorials, Next JS Tutorials, SEO Tips, Digital Marketing Blog, UI UX Design Blog, Mobile App Development Blog, Software Development Blog, MERN Stack Development, JavaScript Tutorials, Frontend Development, Backend Development, E-Commerce Development, Website Development Guide, Search Engine Optimization, Business Growth Strategies, Tech News, Programming Tutorials"
         />
         <meta name="author" content="Seankrix Technologies" />
-        
+
         {/* Canonical Link */}
         <link rel="canonical" href="https://www.seankrixtechnologies.com/blog" />
 
@@ -148,107 +250,109 @@ export default function BlogPage() {
       <section className="bg-black text-white py-24 px-4">
         <div className="max-w-7xl mx-auto">
           {/* Heading */}
-        <div className="text-center mb-24 max-w-5xl mx-auto px-4">
+          <div className="text-center mb-24 max-w-5xl mx-auto px-4">
 
-  {/* Badge */}
-  <span className="inline-flex items-center rounded-full border border-cyan-400/30 bg-cyan-500/10 px-5 py-2 text-sm font-semibold uppercase tracking-[3px] text-cyan-400">
-    📚 Knowledge Hub
-  </span>
+            {/* Badge */}
+            <span className="inline-flex items-center rounded-full border border-cyan-400/30 bg-cyan-500/10 px-5 py-2 text-sm font-semibold uppercase tracking-[3px] text-cyan-400">
+              📚 Knowledge Hub
+            </span>
 
-  {/* SEO H1 */}
-  <h1 className="mt-8 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight text-white">
-    Latest
-    <span className="bg-gradient-to-r from-cyan-400 via-sky-400 to-blue-500 bg-clip-text text-transparent">
-      {" "}Technology Insights
-    </span>
-    <br />
-    & Expert Articles
-  </h1>
+            {/* SEO H1 */}
+            <h1 className="mt-8 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight text-white">
+              Latest
+              <span className="bg-gradient-to-r from-cyan-400 via-sky-400 to-blue-500 bg-clip-text text-transparent">
+                {" "}Technology Insights
+              </span>
+              <br />
+              & Expert Articles
+            </h1>
 
-  {/* Description */}
-  <p className="mt-8 max-w-3xl mx-auto text-lg md:text-xl leading-8 text-gray-300">
-    Stay updated with the latest insights from
-    <strong className="text-white">
-      {" "}Seankrix Technologies
-    </strong>
-    {" "}on
-    <span className="text-cyan-400 font-semibold">
-      {" "}Website Development
-    </span>,
-    Mobile App Development,
-    SEO,
-    Digital Marketing,
-    UI/UX Design,
-    AI,
-    Cloud Computing,
-    ERP,
-    CRM,
-    E-commerce Development
-    and modern software technologies to help your business grow online.
-  </p>
+            {/* Description */}
+            <p className="mt-8 max-w-3xl mx-auto text-lg md:text-xl leading-8 text-gray-300">
+              Stay updated with the latest insights from
+              <strong className="text-white">
+                {" "}Seankrix Technologies
+              </strong>
+              {" "}on
+              <span className="text-cyan-400 font-semibold">
+                {" "}Website Development
+              </span>,
+              Mobile App Development,
+              SEO,
+              Digital Marketing,
+              UI/UX Design,
+              AI,
+              Cloud Computing,
+              ERP,
+              CRM,
+              E-commerce Development
+              and modern software technologies to help your business grow online.
+            </p>
 
-  {/* CTA */}
-  <div className="mt-10 flex flex-wrap justify-center gap-4">
+            {/* CTA */}
+            <div className="mt-10 flex flex-wrap justify-center gap-4">
 
-    <a
-      href="/services"
-      className="rounded-full bg-cyan-500 px-8 py-4 font-semibold text-black transition hover:bg-white"
-    >
-      Explore Our Services
-    </a>
+              <a
+                href="/services"
+                className="rounded-full bg-cyan-500 px-8 py-4 font-semibold text-black transition hover:bg-white"
+              >
+                Explore Our Services
+              </a>
 
-    <a
-      href="/contact-us"
-      className="rounded-full border border-cyan-500 px-8 py-4 font-semibold text-cyan-400 transition hover:bg-cyan-500 hover:text-black"
-    >
-      Get Free Consultation
-    </a>
+              <a
+                href="/contact-us"
+                className="rounded-full border border-cyan-500 px-8 py-4 font-semibold text-cyan-400 transition hover:bg-cyan-500 hover:text-black"
+              >
+                Get Free Consultation
+              </a>
 
-  </div>
+            </div>
 
-</div>
+          </div>
 
           {/* Blog Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {blogs.map((blog, index) => (
-              <div
-                key={index}
-                className="bg-white/5 border border-white/10 rounded-[30px] overflow-hidden hover:border-[#00BFFF]/40 transition-all duration-300"
-              >
-                <div className="relative overflow-hidden">
-                  <Image
-                    src={blog.image}
-                    alt={blog.title}
-                    width={600}
-                    height={400}
-                    className="w-full h-[260px] object-cover hover:scale-110 transition-all duration-700"
-                  />
-                  <div className="absolute top-5 left-5 bg-[#00BFFF] text-black px-4 py-2 rounded-full text-sm font-semibold">
-                    {blog.category}
-                  </div>
-                </div>
-
-                <div className="p-7">
-                  <p className="text-gray-400 text-sm mb-3">
-                    {blog.date}
-                  </p>
-                  <h2 className="text-2xl font-bold mb-4 leading-snug hover:text-[#00BFFF] transition">
-                    {blog.title}
-                  </h2>
-                  <p className="text-gray-400 leading-8 mb-6">
-                    {blog.description}
-                  </p>
-                  <Link
-                    href={`/blogs/${blog.slug}`}
-                    className="inline-flex items-center gap-3 text-[#00BFFF] font-semibold hover:gap-5 transition-all duration-300"
-                  >
-                    Read More →
-                  </Link>
-                </div>
-              </div>
-            ))}
+<div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
+  {blogs?.map((blog, index) => (
+    <Link
+      key={index}
+      href={`/blogs/${blog.slug}`}
+      className="block"
+    >
+      <div className="bg-white/5 border border-white/10 rounded-[30px] overflow-hidden hover:border-[#00BFFF]/40 hover:-translate-y-2 transition-all duration-300 cursor-pointer h-full">
+        <div className="relative overflow-hidden">
+          <Image
+            src={blog.image}
+            alt={blog.title}
+            width={600}
+            height={400}
+            className="w-full h-[260px] object-cover hover:scale-110 transition-all duration-700"
+          />
+          <div className="absolute top-5 left-5 bg-[#00BFFF] text-black px-4 py-2 rounded-full text-sm font-semibold">
+            {blog.category}
           </div>
         </div>
+
+        <div className="p-7">
+          <p className="text-gray-400 text-sm mb-3">
+            {blog.date}
+          </p>
+
+          <h2 className="text-2xl font-bold mb-4 leading-snug hover:text-[#00BFFF] transition">
+            {blog.title}
+          </h2>
+
+          <p className="text-gray-400 leading-8 mb-6">
+            {blog.description}
+          </p>
+
+          <span className="inline-flex items-center gap-3 text-[#00BFFF] font-semibold group-hover:gap-5 transition-all duration-300">
+            Read More →
+          </span>
+        </div>
+      </div>
+    </Link>
+  ))}
+</div>        </div>
       </section>
     </Layout>
   );

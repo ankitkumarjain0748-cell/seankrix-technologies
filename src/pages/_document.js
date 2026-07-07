@@ -44,7 +44,7 @@ export default function Document() {
         {/* Google Tag Manager (noscript) - Crucial for tracking if JS is disabled */}
         <noscript>
           <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-5JPZS77S"
+              src="https://www.googletagmanager.com/ns.html?id=GTM-5JPZS77S"
             height="0"
             width="0"
             style={{ display: "none", visibility: "hidden" }}
