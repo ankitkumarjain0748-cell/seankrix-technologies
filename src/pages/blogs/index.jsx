@@ -7,6 +7,24 @@ import Link from "next/link";
 import React from "react";
 
 const blogs = [
+  {
+  slug: "custom-website-vs-wordpress-website",
+  title: "Custom Website vs WordPress Website – Which One is Better?",
+  image: "/blogs/custom-vs-wordpress-website.webp",
+  category: "Website Development",
+  date: "July 2026",
+  description:
+    "Compare Custom Website vs WordPress Website based on performance, SEO, security, scalability, cost, and flexibility. Find out which solution is best for your business in 2026.",
+},
+  {
+  slug: "website-development-cost-india",
+  title: "How Much Does Website Development Cost in India in 2026?",
+  image: "/blogs/website-development-cost-india.webp",
+  category: "Website Development",
+  date: "July 2026",
+  description:
+    "Discover the average website development cost in India for business websites, eCommerce stores, and custom web applications. Learn the factors that influence pricing and choose the right website solution for your business.",
+},
 
   {
     slug: "static-vs-dynamic-website",

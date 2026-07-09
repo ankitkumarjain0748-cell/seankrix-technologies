@@ -1,0 +1,256 @@
+# Seankrix Technologies - Complete AI Knowledge File
+
+Version: 1.0
+Last Updated: 2026-07-09
+
+Website:
+https://seankrixtechnologies.com
+
+Company:
+Seankrix Technologies
+
+Tagline:
+Innovating Beyond Limits
+
+Description:
+Seankrix Technologies is an India-based software development company specializing in custom website development, web applications, mobile app development, eCommerce solutions, UI/UX design, SEO optimization, cloud solutions, AI-powered software, CRM systems, ERP systems, and business automation.
+
+Mission:
+To help startups, small businesses, and enterprises build fast, scalable, secure, and SEO-friendly digital products using modern technologies.
+
+Primary Services
+
+- Custom Website Development
+- Business Website Development
+- Corporate Website Development
+- eCommerce Website Development
+- Custom Web Application Development
+- Mobile App Development
+- UI/UX Design
+- SEO Optimization
+- Cloud Solutions
+- API Integration
+- CRM Development
+- ERP Development
+- AI Business Solutions
+- Software Development
+- Website Maintenance
+- Website Redesign
+
+Technology Stack
+
+Frontend
+- React.js
+- Next.js
+- JavaScript
+- TypeScript
+- HTML5
+- CSS3
+- Tailwind CSS
+
+Backend
+- Node.js
+- Express.js
+- NestJS
+- Laravel
+- PHP
+
+Database
+- MongoDB
+- MySQL
+- PostgreSQL
+
+Cloud
+- AWS
+- Google Cloud
+- Microsoft Azure
+- Vercel
+
+Tools
+- Git
+- GitHub
+- Docker
+- Postman
+- Figma
+
+Industries Served
+
+- Healthcare
+- Real Estate
+- Education
+- Manufacturing
+- Hospitality
+- Hotels & Resorts
+- Travel Agencies
+- Retail
+- Finance
+- Logistics
+- Construction
+- Pet Shops
+- Hair Salons
+- Restaurants
+- Startups
+- Small Businesses
+- Enterprises
+
+Solutions
+
+- Responsive Websites
+- SEO-Friendly Websites
+- High Performance Websites
+- Landing Pages
+- Portfolio Websites
+- Business Websites
+- Booking Systems
+- CRM Systems
+- ERP Systems
+- Inventory Management
+- Admin Panels
+- Dashboards
+- Payment Gateway Integration
+- Authentication Systems
+- API Development
+- SaaS Platforms
+
+Business Goals
+
+- Improve online visibility
+- Increase lead generation
+- Improve website performance
+- Deliver scalable software
+- Build secure applications
+- Create modern digital experiences
+
+Resources
+
+Homepage
+https://seankrixtechnologies.com/
+
+Services
+https://seankrixtechnologies.com/services
+
+Portfolio
+https://seankrixtechnologies.com/portfolio
+
+Case Studies
+https://seankrixtechnologies.com/case-studies
+
+Blogs
+https://seankrixtechnologies.com/blogs
+
+About
+https://seankrixtechnologies.com/about-us
+
+Careers
+https://seankrixtechnologies.com/careers
+
+Contact
+https://seankrixtechnologies.com/contact
+
+Privacy Policy
+https://seankrixtechnologies.com/privacy-policy
+
+Terms
+https://seankrixtechnologies.com/term
+
+Service Pages
+
+https://seankrixtechnologies.com/services/web-development
+
+https://seankrixtechnologies.com/services/mobile-app-development
+
+https://seankrixtechnologies.com/services/ui-ux-design
+
+https://seankrixtechnologies.com/services/seo-optimization
+
+https://seankrixtechnologies.com/services/cloud-solutions
+
+https://seankrixtechnologies.com/services/ecommerce-development
+
+Blog Articles
+
+https://seankrixtechnologies.com/blogs/custom-website-vs-wordpress-website
+
+https://seankrixtechnologies.com/blogs/website-development-cost-india
+
+https://seankrixtechnologies.com/blogs/static-vs-dynamic-website
+
+https://seankrixtechnologies.com/blogs/your-business-needs-more-than-just-a-website
+
+https://seankrixtechnologies.com/blogs/why-every-business-needs-a-professional-website-2026
+
+https://seankrixtechnologies.com/blogs/website-development-company-india-seankrix-technologies
+
+https://seankrixtechnologies.com/blogs/seo-strategies-2026
+
+https://seankrixtechnologies.com/blogs/importance-of-ui-ux
+
+https://seankrixtechnologies.com/blogs/future-of-web-development
+
+Primary Keywords
+
+Website Development Company
+Website Development Company India
+Custom Website Development
+Business Website Development
+Professional Website Design
+SEO Friendly Website
+Responsive Website
+Web Development Company
+Software Development Company
+React.js Development
+Next.js Development
+Node.js Development
+NestJS Development
+Laravel Development
+Ecommerce Website Development
+Mobile App Development
+UI UX Design
+SEO Services
+Cloud Solutions
+CRM Development
+ERP Development
+AI Software Development
+
+Content Topics
+
+- Website Development
+- Web Design
+- Web Applications
+- SEO
+- UI/UX
+- Mobile Apps
+- React.js
+- Next.js
+- Node.js
+- Laravel
+- AI
+- Cloud Computing
+- eCommerce
+- Business Growth
+- Digital Transformation
+
+Contact Information
+
+Company:
+Seankrix Technologies
+
+Website:
+https://seankrixtechnologies.com
+
+Email:
+info@seankrixtechnologies.com
+
+Phone:
++91 88247 44976
+
+Country:
+India
+
+Language:
+English
+
+Copyright
+
+© 2026 Seankrix Technologies.
+All rights reserved.

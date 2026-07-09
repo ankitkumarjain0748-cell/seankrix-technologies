@@ -1,0 +1,93 @@
+# Seankrix Technologies
+
+> Seankrix Technologies is a leading Website Development and Software Development Company in India, specializing in custom web applications, eCommerce solutions, mobile app development, SEO, UI/UX design, cloud solutions, and AI-powered software development.
+
+Website: https://seankrixtechnologies.com
+Company: Seankrix Technologies
+Email: info@seankrixtechnologies.com
+Phone: +91 88247 44976
+
+## About
+
+Seankrix Technologies helps startups, small businesses, and enterprises build scalable digital products using modern technologies like React.js, Next.js, Node.js, Laravel, NestJS, TypeScript, MongoDB, MySQL, AWS, and cloud platforms.
+
+## Services
+
+- Website Development
+- Custom Web Application Development
+- eCommerce Website Development
+- Mobile App Development
+- UI/UX Design
+- SEO Optimization
+- Cloud Solutions
+- API Integration
+- CRM Development
+- ERP Development
+- AI-Powered Business Solutions
+- Software Development
+- Business Automation
+
+## Industries
+
+- Healthcare
+- Real Estate
+- Education
+- Manufacturing
+- Hotels & Resorts
+- Travel Agencies
+- Finance
+- Retail
+- Pet Shops
+- Hair Salons
+- Logistics
+- Startups
+
+## Technologies
+
+- React.js
+- Next.js
+- Node.js
+- NestJS
+- Express.js
+- Laravel
+- PHP
+- JavaScript
+- TypeScript
+- MongoDB
+- MySQL
+- PostgreSQL
+- AWS
+- Docker
+- Vercel
+
+## Resources
+
+- https://seankrixtechnologies.com/blogs
+- https://seankrixtechnologies.com/services
+- https://seankrixtechnologies.com/portfolio
+- https://seankrixtechnologies.com/case-studies
+- https://seankrixtechnologies.com/about-us
+- https://seankrixtechnologies.com/contact
+
+## Blog Topics
+
+- Website Development
+- Web Design
+- SEO
+- UI/UX
+- Next.js
+- React.js
+- Node.js
+- eCommerce
+- Business Growth
+- Digital Marketing
+
+## Contact
+
+Website: https://seankrixtechnologies.com
+Email: info@seankrixtechnologies.com
+Phone: +91 88247 44976
+
+## License
+
+Copyright © 2026 Seankrix Technologies. All rights reserved.

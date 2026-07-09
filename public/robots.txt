@@ -1,3 +1,14 @@
 User-agent: *
 Allow: /
+
+Disallow: /api/
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /_next/static/
+Disallow: /private/
+
 Sitemap: https://seankrixtechnologies.com/sitemap.xml
+
+# AI resource (informational)
+# https://seankrixtechnologies.com/llms.txt
+# https://seankrixtechnologies.com/llms-full.txt
