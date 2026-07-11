@@ -10,74 +10,125 @@ import FAQ from './Faq';
 import WhatsAppButton from '@/Components/WhatsAppButton';
 import Head from 'next/head';
 import Layout from '@/Components/Layout';
+import Leadership from './Leadership';
 
 export default function Index() {
   return (
 
     <Layout>
       <Head>
-        {/* 1. Technical & Rendering Basics (हमेशा टॉप पर) */}
+        {/* Basic SEO */}
+        <title>
+          About Seankrix Technologies | Web Development & Software Company in India
+        </title>
+
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#00BFFF" />
         <meta name="format-detection" content="telephone=no" />
 
-        {/* 2. Primary SEO Tags */}
-        <title>About Seankrix Technologies | Web & Software Development Company</title>
+        {/* Primary SEO */}
         <meta
           name="description"
-          content="Learn about Seankrix Technologies, a leading web development, mobile app development, SEO, and custom software company helping businesses grow with innovative digital solutions."
+          content="Learn about Seankrix Technologies, a trusted web development, mobile app development, custom software, eCommerce, ERP, CRM, UI/UX, SEO, and digital solutions company in India. Meet our experienced leadership team and discover how we help businesses grow digitally."
         />
+
         <meta
           name="keywords"
-          content="About Seankrix Technologies, Web Development Company India, Software Development Company India, Mobile App Development Company, IT Company India, Custom Software Development, Digital Solutions Company, SEO Services Company, Digital Marketing Agency India, UI UX Design Services, React JS Development Company, Next JS Development Company, MERN Stack Development Company, Startup IT Solutions, Enterprise Software Development"
+          content="About Seankrix Technologies, Seankrix Technologies India, Web Development Company, Software Development Company, Mobile App Development, MERN Stack Development, React JS Development, Next.js Development, Node.js Development, Custom Software Development, CRM Development, ERP Development, eCommerce Development, SEO Company India, Digital Marketing Company, UI UX Design, Website Development Jaipur"
         />
+
         <meta name="author" content="Seankrix Technologies" />
+        <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
 
-        {/* Canonical Link */}
-        <link rel="canonical" href="https://www.seankrixtechnologies.com/about-us" />
+        <link
+          rel="canonical"
+          href="https://www.seankrixtechnologies.com/about-us"
+        />
 
-        {/* Crawling & Geo-Targeting */}
-        <meta name="robots" content="index, follow" />
+        {/* Language */}
         <meta httpEquiv="content-language" content="en-IN" />
-        <meta name="geo.region" content="IN-RJ" />
-        <meta name="geo.country" content="India" />
 
-        {/* 3. Open Graph / Facebook SEO */}
-        <meta property="og:locale" content="en_IN" />
+        {/* Open Graph */}
         <meta property="og:type" content="website" />
+        <meta property="og:locale" content="en_IN" />
         <meta property="og:site_name" content="Seankrix Technologies" />
-        <meta property="og:title" content="About Seankrix Technologies | Digital Innovation Partner" />
-        <meta property="og:description" content="Discover Seankrix Technologies and our mission to deliver innovative web, mobile, software, and digital marketing solutions." />
-        <meta property="og:url" content="https://www.seankrixtechnologies.com/about-us" />
-        <meta property="og:image" content="https://www.seankrixtechnologies.com/og-image.jpg" />
+        <meta
+          property="og:title"
+          content="About Seankrix Technologies | Leading Web & Software Development Company"
+        />
+        <meta
+          property="og:description"
+          content="Meet the team behind Seankrix Technologies. We build websites, mobile apps, CRM, ERP, eCommerce solutions, and scalable software for startups and enterprises."
+        />
+        <meta
+          property="og:url"
+          content="https://www.seankrixtechnologies.com/about-us"
+        />
+        <meta
+          property="og:image"
+          content="https://www.seankrixtechnologies.com/og-image.jpg"
+        />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="Seankrix Technologies" />
 
-        {/* 4. Twitter (X) SEO */}
+        {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="About Seankrix Technologies | Web & Software Experts" />
-        <meta name="twitter:description" content="Learn about our expertise in web development, mobile apps, SEO, digital marketing, and custom software solutions." />
-        <meta name="twitter:image" content="https://www.seankrixtechnologies.com/og-image.jpg" />
+        <meta
+          name="twitter:title"
+          content="About Seankrix Technologies | Digital Innovation Partner"
+        />
+        <meta
+          name="twitter:description"
+          content="Discover our experienced team, expertise, mission, and innovative software development solutions."
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.seankrixtechnologies.com/og-image.jpg"
+        />
 
-        {/* 5. Dedicated AboutPage Schema Markup */}
+        {/* Additional SEO */}
+        <meta name="application-name" content="Seankrix Technologies" />
+        <meta name="apple-mobile-web-app-title" content="Seankrix Technologies" />
+        <meta name="creator" content="Seankrix Technologies" />
+        <meta name="publisher" content="Seankrix Technologies" />
+
+        {/* Structured Data */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "AboutPage",
-              "@id": "https://www.seankrixtechnologies.com/about-us#about",
-              "url": "https://www.seankrixtechnologies.com/about-us",
-              "name": "About Seankrix Technologies",
-              "description": "Learn about Seankrix Technologies, our mission, vision, and expertise in providing cutting-edge IT and software solutions.",
-              "mainEntity": {
-                "@type": "Organization",
-                "name": "Seankrix Technologies",
-                "url": "https://www.seankrixtechnologies.com",
-                "logo": "https://www.seankrixtechnologies.com/logo.png"
-              }
-            })
+              "@graph": [
+                {
+                  "@type": "Organization",
+                  "@id": "https://www.seankrixtechnologies.com/#organization",
+                  name: "Seankrix Technologies",
+                  url: "https://www.seankrixtechnologies.com",
+                  logo: "https://www.seankrixtechnologies.com/logo.png",
+                  image: "https://www.seankrixtechnologies.com/og-image.jpg",
+                  description:
+                    "Seankrix Technologies provides Web Development, Mobile App Development, CRM, ERP, SEO, Digital Marketing, UI/UX Design and Custom Software Solutions.",
+                  foundingDate: "2024",
+                  email: "info@seankrixtechnologies.com",
+                  telephone: "+91-8824744976"
+                },
+                {
+                  "@type": "AboutPage",
+                  "@id":
+                    "https://www.seankrixtechnologies.com/about-us/#webpage",
+                  url: "https://www.seankrixtechnologies.com/about-us",
+                  name: "About Seankrix Technologies",
+                  isPartOf: {
+                    "@id":
+                      "https://www.seankrixtechnologies.com/#organization"
+                  },
+                  description:
+                    "Learn about Seankrix Technologies, our founders, mission, vision and software development expertise."
+                }
+              ]
+            }),
           }}
         />
       </Head>
@@ -88,11 +139,13 @@ export default function Index() {
         <Banner />
         <OurApproach />
         <Whoweare />
+        <Leadership />
+
         <Partners />
         <FAQ />
 
 
-        
+
 
       </section>
 

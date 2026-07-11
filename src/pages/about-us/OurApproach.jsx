@@ -66,13 +66,13 @@ export default function OurApproach() {
             <span className="text-[#00BFFF] text-2xl">*</span> OUR APPROACH
           </p>
 
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl leading-tight">
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl leading-tight">
             Building{" "}
             <span className="text-[#00BFFF] font-bold">
               scalable & impactful
             </span>{" "}
             digital solutions
-          </h1>
+          </h2>
         </div>
 
         <div>
