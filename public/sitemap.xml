@@ -194,4 +194,25 @@
     <priority>0.7</priority>
   </url>
 
+  <url>
+  <loc>https://seankrixtechnologies.com/blogs/ai-website-builder-vs-custom-website</loc>
+  <lastmod>2026-07-21T00:00:00+05:30</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+
+<url>
+  <loc>https://seankrixtechnologies.com/blogs/google-business-profile-seo-guide</loc>
+  <lastmod>2026-07-21T00:00:00+05:30</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+
+<url>
+  <loc>https://seankrixtechnologies.com/blogs/shopify-vs-woocommerce-vs-custom-website</loc>
+  <lastmod>2026-07-21T00:00:00+05:30</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+
 </urlset>

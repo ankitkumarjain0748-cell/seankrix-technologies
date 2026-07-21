@@ -8,6 +8,919 @@ import { useRouter } from "next/router";
 import React, { useState } from "react";
 
 const blogData = {
+  "shopify-vs-woocommerce-vs-custom-website": {
+  slug: "shopify-vs-woocommerce-vs-custom-website",
+  title: "Shopify vs WooCommerce vs Custom Website – Which is Best for Your Business in 2026?",
+  image: "/blogs/shopify-vs-woocommerce-vs-custom-website.webp",
+  category: "eCommerce Development",
+  date: "July 21, 2026",
+  isoDate: "2026-07-21",
+  readTime: "11 min read",
+  excerpt:
+    "Compare Shopify, WooCommerce, and Custom Website Development based on SEO, pricing, security, performance, scalability, and features to choose the best eCommerce platform for your business in 2026.",
+  keywords:
+    "Shopify vs WooCommerce, Shopify vs Custom Website, WooCommerce vs Custom Website, Best eCommerce Platform, eCommerce Website Development, Shopify Development, WooCommerce Development, Custom eCommerce Website, SEO Friendly eCommerce Website, Seankrix Technologies",
+
+  content: `
+# Shopify vs WooCommerce vs Custom Website – Which is Best for Your Business in 2026?
+
+Choosing the right eCommerce platform is one of the most important decisions for your online business. Your platform affects website speed, SEO, security, scalability, customer experience, and long-term business growth.
+
+The three most popular choices are Shopify, WooCommerce, and Custom Website Development. Each has its own strengths, pricing model, and ideal use case.
+
+In this guide, we'll compare Shopify, WooCommerce, and Custom Websites to help you make the right decision in 2026.
+
+---
+
+## What is Shopify?
+
+Shopify is a cloud-based eCommerce platform that allows businesses to create an online store without managing servers or hosting.
+
+### Advantages
+
+✔ Easy Setup
+
+✔ Secure Hosting
+
+✔ Mobile Friendly
+
+✔ Built-in Payment Gateway
+
+✔ Excellent App Store
+
+✔ Automatic Updates
+
+✔ 24/7 Support
+
+### Disadvantages
+
+✘ Monthly Subscription
+
+✘ Transaction Fees
+
+✘ Limited Customization
+
+✘ Expensive Premium Apps
+
+---
+
+## What is WooCommerce?
+
+WooCommerce is a free WordPress plugin that transforms a WordPress website into an online store.
+
+### Advantages
+
+✔ Open Source
+
+✔ Low Initial Cost
+
+✔ Thousands of Plugins
+
+✔ Highly Customizable
+
+✔ Excellent Blogging Support
+
+✔ Better SEO Control
+
+### Disadvantages
+
+✘ Requires Hosting
+
+✘ Regular Maintenance
+
+✘ Plugin Conflicts
+
+✘ Security Depends on Configuration
+
+---
+
+## What is a Custom Website?
+
+A Custom Website is built from scratch using technologies like React.js, Next.js, Node.js, Laravel, or other modern frameworks.
+
+Every feature is designed specifically for your business.
+
+### Advantages
+
+✔ 100% Custom Design
+
+✔ Unlimited Features
+
+✔ Faster Performance
+
+✔ Better SEO
+
+✔ Advanced Security
+
+✔ API Integration
+
+✔ CRM & ERP Integration
+
+✔ Scalable Architecture
+
+✔ Complete Ownership
+
+### Disadvantages
+
+✘ Higher Initial Cost
+
+✘ Longer Development Time
+
+---
+
+# Shopify vs WooCommerce vs Custom Website Comparison
+
+| Feature | Shopify | WooCommerce | Custom Website |
+|----------|----------|-------------|----------------|
+| Ease of Use | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐ |
+| SEO | ⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ |
+| Performance | ⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ |
+| Security | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ |
+| Customization | ⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ |
+| Scalability | ⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ |
+| API Integration | Limited | Good | Unlimited |
+| Hosting | Included | Required | Flexible |
+| Cost | Monthly | Medium | One-Time Investment |
+| Best For | Small Stores | WordPress Stores | Growing Businesses |
+
+---
+
+## SEO Comparison
+
+If ranking on Google is important, SEO should be one of your top priorities.
+
+### Shopify
+
+• Good SEO
+
+• Basic URL limitations
+
+• Built-in sitemap
+
+• Fast loading
+
+### WooCommerce
+
+• Excellent SEO
+
+• Full plugin support
+
+• Yoast SEO
+
+• Rank Math
+
+### Custom Website
+
+• Complete SEO Control
+
+• Custom Schema
+
+• Core Web Vitals Optimization
+
+• Faster Loading
+
+• Technical SEO Optimization
+
+Winner: **Custom Website**
+
+---
+
+## Performance Comparison
+
+Website speed directly impacts conversions and Google rankings.
+
+### Shopify
+
+Very Good
+
+### WooCommerce
+
+Depends on Hosting
+
+### Custom Website
+
+Excellent
+
+Winner: **Custom Website**
+
+---
+
+## Security Comparison
+
+Shopify offers managed security.
+
+WooCommerce requires regular updates.
+
+Custom websites can implement enterprise-level security based on project requirements.
+
+Winner:
+
+Shopify & Custom Website
+
+---
+
+## Pricing Comparison
+
+### Shopify
+
+₹2,000–₹25,000/month
+
+Includes hosting and maintenance.
+
+---
+
+### WooCommerce
+
+₹10,000–₹60,000/year
+
+Hosting, plugins, themes, and maintenance are additional costs.
+
+---
+
+### Custom Website
+
+₹50,000–₹5,00,000+
+
+One-time development investment with complete ownership.
+
+---
+
+## Which Platform Should You Choose?
+
+Choose **Shopify** if:
+
+• You want to launch quickly.
+
+• You don't want server management.
+
+• You have a small or medium-sized online store.
+
+---
+
+Choose **WooCommerce** if:
+
+• You already use WordPress.
+
+• You want better SEO.
+
+• You need flexibility with plugins.
+
+---
+
+Choose a **Custom Website** if:
+
+• You want unlimited customization.
+
+• You need better performance.
+
+• You require CRM, ERP, or API integrations.
+
+• You expect your business to scale rapidly.
+
+• You want complete ownership of your platform.
+
+---
+
+## Why Businesses Choose Custom Websites
+
+Growing businesses prefer custom development because it offers:
+
+✔ Better SEO
+
+✔ Faster Website Speed
+
+✔ Higher Security
+
+✔ Unique User Experience
+
+✔ Unlimited Features
+
+✔ AI Integration
+
+✔ Business Automation
+
+✔ Better Conversion Rates
+
+✔ Long-Term Scalability
+
+---
+
+## Why Choose Seankrix Technologies?
+
+At Seankrix Technologies, we build modern eCommerce websites using React.js, Next.js, Node.js, Laravel, and other cutting-edge technologies.
+
+Our Services include:
+
+• Shopify Store Development
+
+• WooCommerce Development
+
+• Custom eCommerce Development
+
+• Payment Gateway Integration
+
+• CRM & ERP Solutions
+
+• SEO Optimization
+
+• API Development
+
+• Website Maintenance
+
+---
+
+## Final Thoughts
+
+There is no one-size-fits-all eCommerce platform.
+
+Choose Shopify if you want simplicity and fast deployment.
+
+Choose WooCommerce if you need WordPress flexibility and strong SEO.
+
+Choose a Custom Website if your goal is long-term business growth, high performance, advanced functionality, and complete ownership.
+
+Investing in the right platform today can significantly improve your online sales, customer experience, and future scalability.
+
+Need a professional eCommerce website?
+
+Contact Seankrix Technologies today and let our experts build a fast, secure, and SEO-friendly online store tailored to your business.
+`
+},
+  "google-business-profile-seo-guide": {
+  slug: "google-business-profile-seo-guide",
+  title: "Google Business Profile SEO Guide – Rank Higher on Google Maps in 2026",
+  image: "/blogs/google-business-profile-seo-guide.webp",
+  category: "SEO",
+  date: "July 21, 2026",
+  isoDate: "2026-07-21",
+  readTime: "9 min read",
+  excerpt:
+    "Learn how to optimize your Google Business Profile to rank higher in Google Search and Google Maps. Discover proven Local SEO strategies to generate more calls, website visits, and customers in 2026.",
+  keywords:
+    "Google Business Profile SEO, Google My Business SEO, Local SEO, Google Maps Ranking, Google Business Profile Optimization, Local Business Marketing, SEO Guide 2026, Google Reviews, Local Search Ranking, Seankrix Technologies",
+  content: `
+# Google Business Profile SEO Guide – Rank Higher on Google Maps in 2026
+
+If you own a business, appearing in Google Search and Google Maps is one of the easiest ways to attract local customers.
+
+A properly optimized Google Business Profile (formerly Google My Business) can significantly increase phone calls, website visits, directions requests, and qualified leads.
+
+This guide explains how to optimize your Google Business Profile step by step and improve your local SEO rankings in 2026.
+
+---
+
+## What is Google Business Profile?
+
+Google Business Profile (GBP) is Google's free business listing platform that allows companies to appear in:
+
+• Google Search
+
+• Google Maps
+
+• Local Pack Results
+
+• Knowledge Panel
+
+Customers can quickly view your:
+
+✔ Business Name
+
+✔ Address
+
+✔ Phone Number
+
+✔ Website
+
+✔ Business Hours
+
+✔ Photos
+
+✔ Reviews
+
+✔ Services
+
+---
+
+## Why Google Business Profile is Important
+
+More than 80% of customers search online before visiting a business.
+
+An optimized profile helps you:
+
+• Increase Local Visibility
+
+• Get More Phone Calls
+
+• Drive Website Traffic
+
+• Receive Direction Requests
+
+• Build Customer Trust
+
+• Improve Local SEO Rankings
+
+• Generate More Qualified Leads
+
+---
+
+## Step 1: Claim and Verify Your Business
+
+The first step is to claim your business profile.
+
+After claiming:
+
+✔ Verify your business
+
+✔ Add the correct business information
+
+✔ Keep details updated
+
+A verified profile performs much better in local search results.
+
+---
+
+## Step 2: Complete Every Business Detail
+
+Never leave profile fields empty.
+
+Complete:
+
+• Business Name
+
+• Category
+
+• Address
+
+• Phone Number
+
+• Website
+
+• Business Hours
+
+• Description
+
+• Opening Date
+
+• Services
+
+• Products
+
+Google prefers complete business profiles.
+
+---
+
+## Step 3: Write an SEO-Friendly Business Description
+
+Your business description should naturally include keywords without keyword stuffing.
+
+Example:
+
+"Seankrix Technologies is a Website Development Company in India providing custom websites, eCommerce development, SEO services, mobile app development, CRM solutions, and digital marketing services."
+
+---
+
+## Step 4: Choose the Right Business Categories
+
+Selecting the correct category is one of the biggest ranking factors.
+
+Examples:
+
+• Website Designer
+
+• Software Company
+
+• Internet Marketing Service
+
+• Marketing Agency
+
+• Computer Consultant
+
+Use one primary category and relevant secondary categories.
+
+---
+
+## Step 5: Add High-Quality Photos
+
+Businesses with quality images receive significantly more engagement.
+
+Upload:
+
+• Office Photos
+
+• Team Photos
+
+• Projects
+
+• Products
+
+• Customer Work
+
+• Logo
+
+• Cover Image
+
+• Videos
+
+---
+
+## Step 6: Collect More Google Reviews
+
+Customer reviews are one of the strongest Local SEO signals.
+
+Best practices:
+
+✔ Ask every happy customer
+
+✔ Respond to every review
+
+✔ Thank positive reviewers
+
+✔ Professionally address negative feedback
+
+✔ Never purchase fake reviews
+
+---
+
+## Step 7: Publish Weekly Google Posts
+
+Google Business Profile allows you to publish updates.
+
+Post regularly:
+
+• New Services
+
+• Offers
+
+• Blog Articles
+
+• Company News
+
+• Case Studies
+
+• Events
+
+Fresh content signals business activity to Google.
+
+---
+
+## Step 8: Add Products and Services
+
+List all your services with descriptions.
+
+Example:
+
+• Website Development
+
+• eCommerce Development
+
+• SEO Services
+
+• Mobile App Development
+
+• CRM Development
+
+• ERP Solutions
+
+• UI/UX Design
+
+• Website Maintenance
+
+This improves keyword relevance and customer understanding.
+
+---
+
+## Step 9: Keep NAP Consistent
+
+NAP stands for:
+
+• Name
+
+• Address
+
+• Phone Number
+
+Ensure the same details appear on:
+
+• Website
+
+• Google Business Profile
+
+• Social Media
+
+• Business Directories
+
+Consistency builds trust and improves local rankings.
+
+---
+
+## Step 10: Optimize Your Website for Local SEO
+
+Your website should support your Google Business Profile.
+
+Include:
+
+• Location Pages
+
+• Contact Page
+
+• Local Keywords
+
+• Fast Loading Speed
+
+• Mobile-Friendly Design
+
+• Schema Markup
+
+• Internal Linking
+
+---
+
+## Common Google Business Profile Mistakes
+
+Avoid these mistakes:
+
+✘ Wrong Business Category
+
+✘ Missing Website Link
+
+✘ Low-Quality Photos
+
+✘ No Reviews
+
+✘ Incomplete Profile
+
+✘ Inconsistent Contact Information
+
+✘ No Regular Updates
+
+---
+
+## Local SEO Checklist
+
+✔ Verified Business Profile
+
+✔ Complete Information
+
+✔ SEO Description
+
+✔ Correct Categories
+
+✔ Quality Images
+
+✔ Weekly Posts
+
+✔ Positive Reviews
+
+✔ Updated Services
+
+✔ Consistent NAP
+
+✔ Mobile-Friendly Website
+
+✔ Local SEO Optimization
+
+---
+
+## Why Google Business Profile Matters in 2026
+
+As local search competition increases, businesses with optimized Google Business Profiles will gain more visibility, trust, and customers.
+
+Whether you're a restaurant, salon, hospital, school, travel agency, or software company, Local SEO is essential for long-term growth.
+
+---
+
+## Why Choose Seankrix Technologies?
+
+Seankrix Technologies helps businesses improve their online visibility through:
+
+• Google Business Profile Optimization
+
+• Local SEO
+
+• Website Development
+
+• Technical SEO
+
+• eCommerce Development
+
+• CRM & ERP Solutions
+
+• Digital Marketing
+
+• Performance Optimization
+
+---
+
+## Final Thoughts
+
+Google Business Profile is one of the most powerful free marketing tools available today.
+
+When combined with a fast, SEO-friendly website and consistent Local SEO efforts, it can generate more traffic, leads, phone calls, and sales.
+
+Start optimizing your profile today and give your business a competitive advantage in local search results.
+`
+},
+"ai-website-builder-vs-custom-website": {
+    slug: "ai-website-builder-vs-custom-website",
+    title: "AI Website Builder vs Custom Website – Which is Better for Your Business in 2026?",
+    image: "/blogs/ai-website-builder-vs-custom-website.webp",
+    category: "Website Development",
+    date: "July 21, 2026",
+    isoDate: "2026-07-21",
+    readTime: "10 min read",
+    excerpt:
+      "Compare AI Website Builders and Custom Websites based on SEO, speed, performance, security, scalability, and pricing. Find the best solution for your business in 2026.",
+    keywords:
+      "AI Website Builder, AI Website Builder vs Custom Website, Custom Website Development, Website Development Company, SEO Friendly Website, React.js Development, Next.js Development, Node.js Development, Business Website, Website Performance, Website Security, Seankrix Technologies",
+    content: `
+# AI Website Builder vs Custom Website – Which is Better for Your Business in 2026?
+
+Artificial Intelligence has transformed the way websites are created. Today, AI Website Builders can generate a website in just a few minutes, while Custom Website Development provides complete flexibility, better performance, stronger security, and long-term business growth.
+
+In this guide, we'll compare AI Website Builders and Custom Websites based on SEO, performance, pricing, security, scalability, and future business needs.
+
+## What is an AI Website Builder?
+
+An AI Website Builder is an online platform that uses Artificial Intelligence to automatically create websites. Users simply answer a few questions, and the platform generates a ready-made website with templates, images, and content suggestions.
+
+Popular AI Website Builders include:
+
+• Wix AI
+• Hostinger AI Builder
+• Framer AI
+• Durable AI
+• Squarespace AI
+
+### Advantages
+
+• Create websites in minutes
+
+• No coding required
+
+• Affordable pricing
+
+• Beginner friendly
+
+• Easy drag-and-drop editor
+
+### Disadvantages
+
+• Limited customization
+
+• SEO restrictions
+
+• Generic designs
+
+• Limited scalability
+
+• Vendor lock-in
+
+---
+
+## What is a Custom Website?
+
+A Custom Website is developed specifically for your business requirements. Every page, feature, and integration is built according to your goals using modern technologies like React.js, Next.js, Node.js, Laravel, and more.
+
+### Advantages
+
+• Unique Design
+
+• Better SEO
+
+• Faster Performance
+
+• Higher Security
+
+• Unlimited Features
+
+• API Integration
+
+• CRM & ERP Support
+
+• Future Scalability
+
+### Disadvantages
+
+• Higher initial investment
+
+• Longer development time
+
+---
+
+## AI Website Builder vs Custom Website
+
+| Feature | AI Website Builder | Custom Website |
+|---------|-------------------|----------------|
+| SEO | Good | Excellent |
+| Speed | Good | Excellent |
+| Performance | Good | Excellent |
+| Security | Medium | High |
+| Scalability | Limited | Unlimited |
+| Customization | Limited | Unlimited |
+| API Integration | Limited | Full Support |
+| CRM / ERP | Limited | Yes |
+| Business Growth | Limited | Excellent |
+
+## Which is Better for SEO?
+
+A custom website provides complete control over:
+
+• Core Web Vitals
+
+• Page Speed
+
+• Structured Data
+
+• Technical SEO
+
+• URL Structure
+
+• Meta Tags
+
+• Internal Linking
+
+This makes custom websites a better choice for long-term Google rankings.
+
+## Cost Comparison
+
+### AI Website Builder
+
+₹300 – ₹3,000/month
+
+Best For:
+
+• Personal Websites
+
+• Portfolios
+
+• Landing Pages
+
+### Custom Website
+
+₹25,000 – ₹2,50,000+
+
+Best For:
+
+• Business Websites
+
+• eCommerce
+
+• CRM
+
+• ERP
+
+• SaaS
+
+• Enterprise Solutions
+
+## Which Option Should You Choose?
+
+Choose an AI Website Builder if:
+
+• You need a simple website quickly.
+
+• Your budget is limited.
+
+• You don't require advanced functionality.
+
+Choose a Custom Website if:
+
+• You want better SEO.
+
+• You need advanced features.
+
+• Your business will grow.
+
+• You need integrations like CRM, ERP, or APIs.
+
+## Why Choose Seankrix Technologies?
+
+At Seankrix Technologies, we build fast, secure, and SEO-friendly custom websites using React.js, Next.js, Node.js, Laravel, and modern technologies.
+
+Our Services:
+
+• Business Websites
+
+• eCommerce Development
+
+• CRM & ERP Solutions
+
+• API Integration
+
+• AI-Powered Solutions
+
+• SEO Optimization
+
+• Website Maintenance
+
+## Final Thoughts
+
+AI Website Builders are suitable for simple websites and beginners. However, businesses looking for long-term growth, better SEO, higher performance, and unlimited scalability should invest in a Custom Website.
+
+Choosing the right website today can significantly impact your online visibility, customer experience, and future business success.
+`
+  },
+
   "future-of-web-development": {
     slug: "future-of-web-development",
     title: "The Future of Modern Web Development",
